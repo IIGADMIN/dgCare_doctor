@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fec69efa-d885-4e6c-81b8-50cfc9a7d29b" name="Changes" comment="pharmacy updated" />
+    <list default="true" id="fec69efa-d885-4e6c-81b8-50cfc9a7d29b" name="Changes" comment="current updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,14 +102,7 @@
       <option name="project" value="LOCAL" />
       <updated>1688445632586</updated>
     </task>
-    <task id="LOCAL-00007" summary="pharmacy updated">
-      <created>1688445786762</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1688445786762</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,7 +120,6 @@
     <MESSAGE value="pharmacy in small letter" />
     <MESSAGE value="ambulance in small letter" />
     <MESSAGE value="current updated" />
-    <MESSAGE value="pharmacy updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="pharmacy updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="current updated" />
   </component>
 </project>
