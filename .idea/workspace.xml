@@ -109,6 +109,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
+    <list default="true" id="fec69efa-d885-4e6c-81b8-50cfc9a7d29b" name="Changes" comment="pharmacy updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,6 +123,16 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Spandita-1998 &lt;112164275+ansar-iig@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="aa/add_utils" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -155,6 +166,14 @@
       <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor" />
     </key>
   </component>
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "D:/ansar/iig projects/dgCare",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
@@ -185,6 +204,56 @@
       <updated>1688388158126</updated>
     </task>
     <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00001" summary="pharmacy in small letter">
+      <created>1688388711003</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688388711003</updated>
+    </task>
+    <task id="LOCAL-00002" summary="pharmacy in small letter">
+      <created>1688388825274</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688388825274</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ambulance in small letter">
+      <created>1688388937040</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688388937040</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ambulance in small letter">
+      <created>1688445060228</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688445060228</updated>
+    </task>
+    <task id="LOCAL-00005" summary="current updated">
+      <created>1688445175072</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688445175072</updated>
+    </task>
+    <task id="LOCAL-00006" summary="current updated">
+      <created>1688445632586</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688445632586</updated>
+    </task>
+    <task id="LOCAL-00007" summary="pharmacy updated">
+      <created>1688445786762</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1688445786762</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,5 +271,10 @@
     <MESSAGE value="add structure" />
     <MESSAGE value="delete file" />
     <option name="LAST_COMMIT_MESSAGE" value="delete file" />
+    <MESSAGE value="pharmacy in small letter" />
+    <MESSAGE value="ambulance in small letter" />
+    <MESSAGE value="current updated" />
+    <MESSAGE value="pharmacy updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="pharmacy updated" />
   </component>
 </project>
