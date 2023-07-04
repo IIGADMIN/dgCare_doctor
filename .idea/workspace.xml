@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fec69efa-d885-4e6c-81b8-50cfc9a7d29b" name="Changes" comment="ambulance in small letter">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fec69efa-d885-4e6c-81b8-50cfc9a7d29b" name="Changes" comment="current updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +80,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688388937040</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ambulance in small letter">
+      <created>1688445060228</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688445060228</updated>
+    </task>
+    <task id="LOCAL-00005" summary="current updated">
+      <created>1688445175072</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688445175072</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +111,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pharmacy in small letter" />
     <MESSAGE value="ambulance in small letter" />
-    <option name="LAST_COMMIT_MESSAGE" value="ambulance in small letter" />
+    <MESSAGE value="current updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="current updated" />
   </component>
 </project>
