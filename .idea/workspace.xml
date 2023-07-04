@@ -4,112 +4,32 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fec69efa-d885-4e6c-81b8-50cfc9a7d29b" name="Changes" comment="delete file">
-      <change afterPath="$PROJECT_DIR$/assets/Logo/logo_gif.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Logo/logo_png.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/gif/payment_failed.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/gif/payment_successful.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/aspect_ratio.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/brb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/bug.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/cam_state_off.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/cam_state_on.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/camera.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/clock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/close_button.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/dark_mode.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/decoder.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/degrade.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/end.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/end_room.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/end_warning.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/event.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/hand.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/hand_outline.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/hls.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/hms_icon_1024.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/hms_icon_loading.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/info.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/layers.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/leave.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/leave_hls.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/light_mode.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/live.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/live_stream.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/message_badge_off.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/message_badge_on.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/mic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/mic_state_off.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/mic_state_on.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/more.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/music_wave.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/network_0.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/network_1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/network_2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/network_3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/network_4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/network_5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/no_network.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/notification.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/participants.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/peer_remove.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/pencil.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/person.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/pin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/preview_state_off.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/preview_state_on.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/record.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/role_change.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/rotate.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/screen_share.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/send.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/send_message.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/settings.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/share.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/simulcast.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/single_tile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/speaker_state_off.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/speaker_state_on.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/stats.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/stream.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/tile_mute.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/user-music.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/warning.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/watching.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/illustration/doctor_illustration1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/illustration/nurse_illustration.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/illustration/pharmacy_illustration.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/doctor_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/every_step_img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/finddoctor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/no_internet_img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/nurse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/offline_doctor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/otp.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/registration.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/satisfiedCustomer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/telephone_doctor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/videoconsult.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/json/message.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/helpers/api_helper.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/helpers/date_and_time_converter.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/helpers/internet_helper.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/helpers/no_records_found.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/helpers/notification_helper.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/helpers/text_field_validators.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils/colors/colors.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils/constants/constant_data.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils/data/local_data_keys.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils/data/shared_preference.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils/firebase/firebase_options.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dgCare_doctor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dgCare_doctor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+    <list default="true" id="582da4ce-a1ed-4bac-b8cf-cee1d9ac847e" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/assets/logo/logo_gif.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/builder/read_more_text_builder.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/shapes/app_shapes.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/sizes/app_sizes.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/sizes/border_radius.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/sizes/default_sizes.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/styles/text_field_decorations.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/styles/text_style.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/loader_dialog_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/profile_selection/profile_selection_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/profile_selection/profile_selection_widgets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/request_registration/contact_us_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/request_registration/request_registration_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/request_registration/request_registration_widgets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Logo/logo_gif.gif" beforeDir="false" afterPath="$PROJECT_DIR$/assets/gif/logo_gif.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Logo/logo_png.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/logo/logo_png.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
-    <list default="true" id="fec69efa-d885-4e6c-81b8-50cfc9a7d29b" name="Changes" comment="pharmacy updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,14 +43,9 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Spandita-1998 &lt;112164275+ansar-iig@users.noreply.github.com&gt;" />
-      </list>
-    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="aa/add_utils" />
+        <entry key="$PROJECT_DIR$" value="aa/my_utils" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -138,7 +53,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2S3uflgGdmKfJpkPLPsLsGl4RSL" />
+  <component name="ProjectId" id="2S5tmezQr0ksVJNtCwTPxIu1qEh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -151,29 +66,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "D:/ansar/iig projects/2050Healthcare/dgCare_doctor/lib/utils",
-    "settings.editor.selected.configurable": "dart.settings",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "D:/ansar/iig projects/2050Healthcare/dgCare_doctor/lib/widgets/screens/request_registration",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\widgets\screens\request_registration" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\widgets" />
       <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\utils" />
-      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\utils\firebase" />
-      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\helpers" />
-      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\utils\styles" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\widgets\screens\profile_selection" />
     </key>
   </component>
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "D:/ansar/iig projects/dgCare",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater",
-    "show.migrate.to.gradle.popup": "false"
-  }
-}]]></component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
@@ -182,78 +91,28 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="commit">
+      <created>1688447071853</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688447071853</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit">
+      <created>1688447084419</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688447084419</updated>
+    </task>
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fec69efa-d885-4e6c-81b8-50cfc9a7d29b" name="Changes" comment="" />
-      <created>1688387692582</created>
+      <changelist id="582da4ce-a1ed-4bac-b8cf-cee1d9ac847e" name="Changes" comment="commit" />
+      <created>1688448431685</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1688387692582</updated>
-    </task>
-    <task id="LOCAL-00001" summary="add structure">
-      <created>1688388106598</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1688388106598</updated>
-    </task>
-    <task id="LOCAL-00002" summary="delete file">
-      <created>1688388158126</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1688388158126</updated>
+      <updated>1688448431685</updated>
     </task>
     <option name="localTasksCounter" value="3" />
-    <task id="LOCAL-00001" summary="pharmacy in small letter">
-      <created>1688388711003</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1688388711003</updated>
-    </task>
-    <task id="LOCAL-00002" summary="pharmacy in small letter">
-      <created>1688388825274</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1688388825274</updated>
-    </task>
-    <task id="LOCAL-00003" summary="ambulance in small letter">
-      <created>1688388937040</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1688388937040</updated>
-    </task>
-    <task id="LOCAL-00004" summary="ambulance in small letter">
-      <created>1688445060228</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1688445060228</updated>
-    </task>
-    <task id="LOCAL-00005" summary="current updated">
-      <created>1688445175072</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1688445175072</updated>
-    </task>
-    <task id="LOCAL-00006" summary="current updated">
-      <created>1688445632586</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1688445632586</updated>
-    </task>
-    <task id="LOCAL-00007" summary="pharmacy updated">
-      <created>1688445786762</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1688445786762</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,13 +127,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add structure" />
-    <MESSAGE value="delete file" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete file" />
-    <MESSAGE value="pharmacy in small letter" />
-    <MESSAGE value="ambulance in small letter" />
-    <MESSAGE value="current updated" />
-    <MESSAGE value="pharmacy updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="pharmacy updated" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>
