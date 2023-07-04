@@ -3,8 +3,6 @@ import 'package:healthcaredoctor2050/utils/datas/local_data_keys.dart';
 import 'package:healthcaredoctor2050/utils/datas/shared_preference.dart';
 import 'package:http/http.dart' as http;
 
-
-
 class HttpRequestHelper {
   bool? hasToken;
   Map<String, dynamic>? data;
