@@ -47,6 +47,97 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
 
+  #phone number
+  intl_phone_field: ^3.0.1
+
+  google_fonts: ^2.1.0
+  http: ^0.13.0
+  fluttertoast: ^8.0.8
+  url_launcher: ^6.0.18
+  provider:
+  shared_preferences: ^2.0.7
+  top_snackbar_flutter: ^1.0.2
+  syncfusion_flutter_datagrid: ^20.2.46
+
+  intl: ^0.17.0
+
+  #Getx
+  get:
+
+  #for pdf downloading
+  webview_flutter: ^3.0.4
+
+  permission_handler: ^10.0.0
+
+  #pdf view
+  advance_pdf_viewer: ^2.0.0
+  flutter_cached_pdfview: ^0.4.1
+
+  #for text size
+  auto_size_text: ^3.0.0
+
+  #otp field
+  otp_text_field: ^1.1.1
+
+  #profile
+  avatar_glow: ^2.0.2
+  slide_digital_clock: ^1.0.2
+  # image_picker: ^0.8.5
+  # image_picker: ^0.8.4+11
+  image_picker: ^0.8.5
+  cached_network_image: ^3.2.0
+
+  #check update
+  update_notification: ^1.0.1
+
+  #widget Sizer
+  sizer: ^2.0.15
+  nb_utils: ^4.6.20
+
+  #firebase
+  firebase_core: ^2.1.1
+  firebase_messaging: ^14.0.4
+  # flutter_local_notifications: ^11.0.0
+  firebase_analytics: ^10.0.4
+  flutter_local_notifications: ^11.0.1
+
+  #  sms_autofill: ^2.2.0
+  pinput: ^2.2.31
+  timer_count_down: ^2.2.1
+
+  # page transition animation
+  page_transition: ^2.0.9
+
+  # protect Screen lock
+  wakelock: any
+
+  # bottom sheet
+  modal_bottom_sheet: ^2.1.2
+  liquid_progress_indicator: ^0.4.0
+
+
+  flutter_offline: ^2.1.0
+  connectivity_plus: any
+
+  dio: any
+  #100ms
+  hmssdk_flutter: ^1.6.0
+  path_provider:
+  dropdown_button2: ^2.0.0
+  focus_detector:
+  flutter_staggered_grid_view: any
+  candlesticks: ^2.1.0
+  tuple:
+  flutter_svg: any
+  file_picker:
+  draggable_widget:
+  badges:
+  pip_flutter: ^0.0.3
+  flutter_linkify:
+  flutter_foreground_task: ^3.10.0
+  image_gallery_saver:
+
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -59,6 +150,13 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/Logo/
+    - assets/gif/
+    - assets/json/
+    - assets/icons/
+    - assets/illustration/
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
