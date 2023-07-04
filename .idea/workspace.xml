@@ -30,17 +30,11 @@
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
+    <list default="true" id="fec69efa-d885-4e6c-81b8-50cfc9a7d29b" name="Changes" comment="current updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Dart File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -57,6 +51,8 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectId" id="2S3uflgGdmKfJpkPLPsLsGl4RSL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -72,8 +68,19 @@
     "io.flutter.reload.alreadyRun": "true",
     "last_opened_file_path": "D:/ansar/iig projects/2050Healthcare/dgCare_doctor/lib/widgets/screens/request_registration",
     "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ansar/iig projects/dgCare&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\widgets\screens\request_registration" />
@@ -81,6 +88,9 @@
       <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\utils" />
       <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\utils\styles" />
       <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\widgets\screens\profile_selection" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Flutter\IIG Projects\2023\dgCare_doctor\lib\views\doctor\controllers" />
+      <recent name="C:\Flutter\IIG Projects\2023\dgCare_doctor\lib\views\doctor" />
     </key>
   </component>
   <component name="RunManager">
@@ -93,6 +103,15 @@
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="commit">
       <created>1688447071853</created>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fec69efa-d885-4e6c-81b8-50cfc9a7d29b" name="Changes" comment="" />
+      <created>1688387692582</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688387692582</updated>
+    </task>
+    <task id="LOCAL-00001" summary="pharmacy in small letter">
+      <created>1688388711003</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
@@ -113,6 +132,21 @@
       <updated>1688448431685</updated>
     </task>
     <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00005" summary="current updated">
+      <created>1688445175072</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688445175072</updated>
+    </task>
+    <task id="LOCAL-00006" summary="current updated">
+      <created>1688445632586</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688445632586</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,5 +163,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="pharmacy in small letter" />
+    <MESSAGE value="ambulance in small letter" />
+    <MESSAGE value="current updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="current updated" />
   </component>
 </project>
