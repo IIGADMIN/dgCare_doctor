@@ -1,25 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cb95740-5af8-4122-9d75-eb2bb07f5da9" name="Changes" comment="Merge remote-tracking branch 'origin/sc/doctor_login' into sc/doctor_login" />
+    <list default="true" id="5306b947-fab3-4cd6-9756-ab96f19ff962" name="Changes" comment="doctor login">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_5_2023_11_35_AM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/doctor/controllers/data/doctor_api_urls.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/doctor/controllers/providers/login/doctor_auth_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/doctor/controllers/providers/login/doctor_details_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/doctor/views/screens/login/doctor_auth_widgets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/doctor/views/screens/login/doctor_phone_auth_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/doctor/views/screens/login/doctor_phone_otp_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/controllers/data/nurse_api_urls.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/no_internet_screen/no_internet_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/no_internet_screen/no_internet_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Views/doctor/Models/doctor_details_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04-07-2023_16_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04-07-2023_16_17__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/doctor/controllers/datas/doctor_urls.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/nurse/controllers/datas/nurse_api_urls.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/nurse/controllers/providers/login/nurse_auth_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Views/nurse/controllers/providers/login/nurse_auth_provider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/datas/base_urls.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/data/base_urls.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/datas/local_data_keys.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/datas/shared_preference.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/doctor/views/screens/home/doctor_home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/doctor/views/screens/home/doctor_home_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/screens/profile_selection/profile_selection_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/screens/profile_selection/profile_selection_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="sc/doctor_login" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "dart.analysis.tool.window.visible": "false"
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2S6Wy7xSRaQudLozRopZuuEZLdO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Flutter/IIG Projects/2023/dgCare_doctor/lib/views/doctor/views/screens&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Flutter\IIG Projects\2023\dgCare_doctor\lib\views\doctor\views\screens" />
+      <recent name="C:\Flutter\IIG Projects\2023\dgCare_doctor\lib\views\ambulance\models" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\utils\styles" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\widgets\app_widgets" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\nurse\views\screens\login" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Flutter\IIG Projects\2023\dgCare_doctor\lib\utils\data" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\widgets\app_widgets\notification" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\nurse\views\screens\login" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5306b947-fab3-4cd6-9756-ab96f19ff962" name="Changes" comment="" />
+      <created>1688467767974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688467767974</updated>
+    </task>
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -32,5 +118,52 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="just updated" />
+    <MESSAGE value="Merge branch 'aa/nurse/authentication' of https://github.com/IIGADMIN/dgCare_doctor into sc/doctor_login&#10;&#10; Conflicts:&#10;&#9;.idea/libraries/Dart_Packages.xml&#10;&#9;.idea/libraries/Dart_Packages2.xml&#10;&#9;.idea/workspace.xml" />
+    <MESSAGE value="doctor login" />
+    <option name="LAST_COMMIT_MESSAGE" value="doctor login" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/views/nurse/controllers/providers/login/nurse_auth_provider.dart</url>
+          <line>35</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/views/nurse/controllers/providers/login/nurse_auth_provider.dart</url>
+          <line>34</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/views/nurse/views/screens/login/nurse_phone_auth_screen.dart</url>
+          <line>138</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/helpers/api_helper.dart</url>
+          <line>58</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/helpers/api_helper.dart</url>
+          <line>62</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/helpers/api_helper.dart</url>
+          <line>60</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/helpers/api_helper.dart</url>
+          <line>59</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

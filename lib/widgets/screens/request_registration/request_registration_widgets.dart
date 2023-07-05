@@ -109,17 +109,13 @@ class RequestRegistrationWidgets {
         },
         child: LiquidLinearProgressIndicator(
           value: 0.30,
-          // Defaults to 0.5.
           valueColor: AlwaysStoppedAnimation(
             mainColor,
           ),
-          // Defaults to the current Theme's accentColor.
           backgroundColor: Colors.white,
-          // Defaults to the current Theme's backgroundColor.
           borderColor: mainColor,
           borderWidth: 0.0,
           direction: Axis.vertical,
-          // The direction the liquid moves (Axis.vertical = bottom to top, Axis.horizontal = left to right). Defaults to Axis.vertical.
           center: Text(
             "Thank You",
             style: boldTextStyle(color: mainColor, size: 30),
@@ -153,8 +149,9 @@ class RequestRegistrationWidgets {
                     finish(context);
                     RequestRegistrationScreen(contactFor: title ?? "").launch(context);
                   },
-                  leading: const CircleAvatar(
-                    child: Icon(Icons.contact_support_outlined),
+                  leading: CircleAvatar(
+                    backgroundColor: buttonColor,
+                    child: const Icon(Icons.contact_support_outlined,color: Colors.white,),
                   ),
                   title: const Text("Contact Us"),
                   subtitle: const Text("Send a request for your new registration."),
@@ -166,8 +163,9 @@ class RequestRegistrationWidgets {
                     finish(context);
                     loginFor.launch(context);
                   },
-                  leading: const CircleAvatar(
-                    child: Icon(Icons.login),
+                  leading: CircleAvatar(
+                    backgroundColor: buttonColor,
+                    child: const Icon(Icons.login,color: Colors.white,),
                   ),
                   title: const Text("Login"),
                   subtitle: const Text("You can login if you are registered here."),

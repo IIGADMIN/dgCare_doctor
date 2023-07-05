@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.iigTechnology.healthcaredoctor2050">
    <application
-        android:label="healthcaredoctor2050"
+        android:label="2050DgCarePro"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
