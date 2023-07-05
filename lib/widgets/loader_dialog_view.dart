@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:healthcaredoctor2050/utils/sizes/app_sizes.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:sizer/sizer.dart';
 
 import '../utils/colors/colors.dart';
 
 
 class LoaderDialogView  {
   BuildContext context;
-
   LoaderDialogView(this.context);
 
 
  Widget loaderDialogView() => AlertDialog(
     content: SizedBox(
       height: 40,
-      width: 90.w,
+      width: screenWidth(context)-10.0,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [

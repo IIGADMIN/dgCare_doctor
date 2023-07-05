@@ -1,25 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cb95740-5af8-4122-9d75-eb2bb07f5da9" name="Changes" comment="Merge remote-tracking branch 'origin/sc/doctor_login' into sc/doctor_login" />
+    <list default="true" id="5306b947-fab3-4cd6-9756-ab96f19ff962" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/controllers/datas/nurse_api_urls.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/controllers/providers/login/nurse_auth_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/controllers/providers/login/nurse_details_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/models/nuser_details_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/views/screens/login/nurse_auth_widgets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/views/screens/login/nurse_phone_auth_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/views/screens/login/nurse_phone_otp_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/styles/image_style.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/app_widgets/app_button_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/app_widgets/no_internent_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/app_widgets/notification/app_notification_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/app_widgets/notification/notification_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/nurse/views/screens/home/nurse_home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/nurse/views/screens/home/nurse_home_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/nurse/views/screens/home/nurse_home_widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/nurse/views/screens/home/nurse_home_widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/loader_dialog_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/loader_dialog_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/screens/profile_selection/profile_selection_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/screens/profile_selection/profile_selection_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/screens/request_registration/request_registration_widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/screens/request_registration/request_registration_widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="aa/set_up_project" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2S6Wy7xSRaQudLozRopZuuEZLdO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "dart.analysis.tool.window.visible": "false"
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "D:/ansar/iig projects/2050Healthcare/dgCare_doctor/lib/utils/styles",
+    "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\utils\styles" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\widgets\app_widgets" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\nurse\views\screens\login" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\nurse\controllers\providers\login" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\nurse\models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\widgets\app_widgets\notification" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\nurse\views\screens\login" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5306b947-fab3-4cd6-9756-ab96f19ff962" name="Changes" comment="" />
+      <created>1688467767974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688467767974</updated>
+    </task>
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -32,5 +112,46 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/views/nurse/controllers/providers/login/nurse_auth_provider.dart</url>
+          <line>35</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/views/nurse/controllers/providers/login/nurse_auth_provider.dart</url>
+          <line>34</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/views/nurse/views/screens/login/nurse_phone_auth_screen.dart</url>
+          <line>138</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/helpers/api_helper.dart</url>
+          <line>58</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/helpers/api_helper.dart</url>
+          <line>62</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/helpers/api_helper.dart</url>
+          <line>60</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/helpers/api_helper.dart</url>
+          <line>59</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

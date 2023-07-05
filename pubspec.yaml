@@ -91,7 +91,6 @@ dev_dependencies:
   update_notification: ^1.0.1
 
   #widget Sizer
-  sizer: ^2.0.15
   nb_utils: ^4.6.20
 
   #firebase
