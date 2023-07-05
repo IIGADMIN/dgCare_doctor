@@ -13,6 +13,6 @@ const userDesignationKey = "userDesignation";
 const userProfilePicKey = "userImage";
 const userCallEndIdKey="callendId";
 const userChannelNameKey="channelName";
-const userTypeKey = "userTYpe";
+const userTypeKey = "userType";
 const userTokenKey= "userToken";
 

@@ -22,6 +22,8 @@ Future<void> main() async{
     ChangeNotifierProvider<NurseDetailsProvider>.value(
         value: NurseDetailsProvider()),
     ChangeNotifierProvider<NurseAuthProvider>.value(
+        value: NurseAuthProvider()),
+    ChangeNotifierProvider<NurseAuthProvider>.value(
         value: NurseAuthProvider())
   ],child: MyApp(),),);
 }

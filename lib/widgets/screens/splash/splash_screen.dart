@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:healthcaredoctor2050/utils/colors/colors.dart';
 import 'package:healthcaredoctor2050/utils/sizes/app_sizes.dart';
+import 'package:healthcaredoctor2050/views/nurse/views/screens/home/nurse_home_screen.dart';
 import 'package:healthcaredoctor2050/widgets/screens/splash/splash_widgets.dart';
 import '../../../helpers/internet_helper.dart';
 import '../../../helpers/notification_helper.dart';
@@ -60,7 +61,7 @@ _checkUserLoginStatus() async {
     if(!mounted) return;
     Navigator.pushAndRemoveUntil(
         context,
-        MaterialPageRoute(builder: (context) => const ProfileSelectionScreen()),
+        MaterialPageRoute(builder: (context) => const NurseHomeScreen()),
             (route) => false);
   } else {
     if(!mounted) return;

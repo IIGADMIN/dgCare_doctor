@@ -40,7 +40,6 @@ class NurseDetailsProvider with ChangeNotifier {
     _designation = await getStringFromLocal(userDesignationKey);
     _profilePic = await getStringFromLocal(userProfilePicKey);
     _phoneNo = await getStringFromLocal(userMobileKey);
-
     notifyListeners();
   }
 

@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import '../../../../../helpers/api_helper.dart';
-import '../../../../../utils/constants/constant_data.dart';
 import '../../../../../utils/data/local_data_keys.dart';
 import '../../../../../utils/data/shared_preference.dart';
 import '../../../../../widgets/app_widgets/notification/app_notification_view.dart';
 import '../../../models/nuser_details_model.dart';
-import '../../datas/nurse_api_urls.dart';
+import '../../data/nurse_api_urls.dart';
 import 'nurse_details_provider.dart';
 
 class NurseAuthProvider with ChangeNotifier {
@@ -77,7 +76,6 @@ class NurseAuthProvider with ChangeNotifier {
   Future<void> convertResponseBaseOnUserData(
       String userType, Map<String, dynamic> responseData) async {
     await storeStringToLocal(userTypeKey, userType);
-    if (userType == nurseCode) {
       var data = NurseDetailsModel.fromJson(responseData);
       _authToken = data.data?.token ?? "Invalid token";
       await storeStringToLocal(
@@ -91,18 +89,18 @@ class NurseAuthProvider with ChangeNotifier {
           designation: "NA",
           education: "NA",
           image: data.data?.userDetails?.nurse?.profilePhoto ?? "NA"));
-    }
+
   }
 
   addUserDetails(UserDetailsModel data) async {
     var provider = NurseDetailsProvider();
-    provider.addFirstName(data.firstName);
-    provider.addLastName(data.lastName);
-    provider.addUserId(data.userId);
-    provider.addDesignation(data.designation);
-    provider.addEducation(data.education);
-    provider.addPhoneNo(data.mobile);
-    provider.addProfilePic(data.image);
+   await provider.addFirstName(data.firstName);
+   await provider.addLastName(data.lastName);
+   await provider.addUserId(data.userId);
+   await provider.addDesignation(data.designation);
+   await provider.addEducation(data.education);
+   await provider.addPhoneNo(data.mobile);
+   await provider.addProfilePic(data.image);
   }
 }
 
