@@ -1,0 +1,69 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"NONE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"582da4ce-a1ed-4bac-b8cf-cee1d9ac847e\" name=\"Changes\" comment=\"commit\">\r\n      <change afterPath=\"$PROJECT_DIR$/assets/logo/logo_gif.gif\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/lib/utils/builder/read_more_text_builder.dart\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/lib/utils/shapes/app_shapes.dart\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/lib/utils/sizes/app_sizes.dart\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/lib/utils/sizes/border_radius.dart\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/lib/utils/sizes/default_sizes.dart\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/lib/utils/styles/text_field_decorations.dart\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/lib/utils/styles/text_style.dart\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/lib/widgets/loader_dialog_view.dart\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/lib/widgets/screens/profile_selection/profile_selection_screen.dart\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/lib/widgets/screens/profile_selection/profile_selection_widgets.dart\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/lib/widgets/screens/request_registration/contact_us_model.dart\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/lib/widgets/screens/request_registration/request_registration_screen.dart\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/lib/widgets/screens/request_registration/request_registration_widgets.dart\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/lib/widgets/screens/splash/splash_screen.dart\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/lib/widgets/screens/splash/splash_widgets.dart\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/android/app/build.gradle\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/android/app/build.gradle\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/assets/Logo/logo_gif.gif\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/assets/gif/logo_gif.gif\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/assets/Logo/logo_png.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/assets/logo/logo_png.png\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/lib/main.dart\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/lib/main.dart\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/pubspec.yaml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/pubspec.yaml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Dart File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"aa/my_utils\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2S5tmezQr0ksVJNtCwTPxIu1qEh\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.cidr.known.project.marker\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"cidr.known.project.marker\": \"true\",\r\n    \"dart.analysis.tool.window.visible\": \"false\",\r\n    \"io.flutter.reload.alreadyRun\": \"true\",\r\n    \"last_opened_file_path\": \"D:/ansar/iig projects/2050Healthcare/dgCare_doctor/lib/widgets/screens/request_registration\",\r\n    \"show.migrate.to.gradle.popup\": \"false\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\ansar\\iig projects\\2050Healthcare\\dgCare_doctor\\lib\\widgets\\screens\\request_registration\" />\r\n      <recent name=\"D:\\ansar\\iig projects\\2050Healthcare\\dgCare_doctor\\lib\\widgets\" />\r\n      <recent name=\"D:\\ansar\\iig projects\\2050Healthcare\\dgCare_doctor\\lib\\utils\" />\r\n      <recent name=\"D:\\ansar\\iig projects\\2050Healthcare\\dgCare_doctor\\lib\\utils\\styles\" />\r\n      <recent name=\"D:\\ansar\\iig projects\\2050Healthcare\\dgCare_doctor\\lib\\widgets\\screens\\profile_selection\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"main.dart\" type=\"FlutterRunConfigurationType\" factoryName=\"Flutter\">\r\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/lib/main.dart\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task id=\"LOCAL-00001\" summary=\"commit\">\r\n      <created>1688447071853</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1688447071853</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"commit\">\r\n      <created>1688447084419</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1688447084419</updated>\r\n    </task>\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"582da4ce-a1ed-4bac-b8cf-cee1d9ac847e\" name=\"Changes\" comment=\"commit\" />\r\n      <created>1688448431685</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1688448431685</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"commit\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"commit\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 027e2fa1871e1701375466668827f990c985077d)
++++ b/.idea/workspace.xml	(date 1688467583850)
+@@ -4,31 +4,8 @@
+     <option name="autoReloadType" value="NONE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="582da4ce-a1ed-4bac-b8cf-cee1d9ac847e" name="Changes" comment="commit">
+-      <change afterPath="$PROJECT_DIR$/assets/logo/logo_gif.gif" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/utils/builder/read_more_text_builder.dart" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/utils/shapes/app_shapes.dart" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/utils/sizes/app_sizes.dart" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/utils/sizes/border_radius.dart" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/utils/sizes/default_sizes.dart" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/utils/styles/text_field_decorations.dart" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/utils/styles/text_style.dart" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/widgets/loader_dialog_view.dart" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/profile_selection/profile_selection_screen.dart" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/profile_selection/profile_selection_widgets.dart" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/request_registration/contact_us_model.dart" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/request_registration/request_registration_screen.dart" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/request_registration/request_registration_widgets.dart" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_screen.dart" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_widgets.dart" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++    <list default="true" id="582da4ce-a1ed-4bac-b8cf-cee1d9ac847e" name="Changes" comment="added splash,profile selection">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Logo/logo_gif.gif" beforeDir="false" afterPath="$PROJECT_DIR$/assets/gif/logo_gif.gif" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Logo/logo_png.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/logo/logo_png.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -112,7 +89,14 @@
+       <option name="presentableId" value="Default" />
+       <updated>1688448431685</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="added splash,profile selection">
++      <created>1688467098332</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1688467098332</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -128,6 +112,7 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="commit" />
+-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
++    <MESSAGE value="added splash,profile selection" />
++    <option name="LAST_COMMIT_MESSAGE" value="added splash,profile selection" />
+   </component>
+ </project>
+\ No newline at end of file
