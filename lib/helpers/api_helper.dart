@@ -1,7 +1,8 @@
 import 'dart:convert';
-import 'package:healthcaredoctor2050/utils/datas/local_data_keys.dart';
-import 'package:healthcaredoctor2050/utils/datas/shared_preference.dart';
 import 'package:http/http.dart' as http;
+
+import '../utils/data/local_data_keys.dart';
+import '../utils/data/shared_preference.dart';
 
 class HttpRequestHelper {
   bool? hasToken;
