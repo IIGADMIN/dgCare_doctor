@@ -40,18 +40,25 @@ class ScreenLoadingView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Image.asset(
-            "assets/Logo/logo_gif.gif",
-            width: 80,
-            height: 80,
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        body: SizedBox(
+          width: screenWidth(context),
+          height: screenHeight(context),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Image.asset(
+                "assets/gif/logo_gif.gif",
+                width: 80,
+                height: 80,
+              ),
+              10.height,
+              Text("Please Wait...")
+            ],
           ),
-          10.height,
-          Text("Please Wait...")
-        ],
+        ),
       ),
     );
   }
