@@ -4,7 +4,6 @@ import '../../../../../utils/colors/colors.dart';
 import '../../../../../utils/constants/constant_data.dart';
 import '../../../../../widgets/loader_dialog_view.dart';
 import '../../../controllers/providers/appointment/nurse_today_appointment_provider.dart';
-import '../../../controllers/providers/meeting/meeting_mode_provider.dart';
 import '../../../models/today_nurse_appointment_model.dart';
 import 'nurse_today_consultation_widgets.dart';
 import 'package:nb_utils/nb_utils.dart';
@@ -70,11 +69,11 @@ class _NurseTodayConsultationScreenState extends State<NurseTodayConsultationScr
           data.bookSchedule?.status.toString() == activeStatusCode
               ? view.joinButtonView("Start Video Call", color: Colors.green,
               onTap: () {
-                startVideoCall(
-                    doctorId: data.nurse?.nurseId.toString() ?? "",
-                    roomId: data.bookSchedule?.roomId,
-                    userName:
-                    "${data.nurse?.activeNurse?.firstName} ${data.nurse?.activeNurse?.lastName}");
+                // startVideoCall(
+                //     doctorId: data.nurse?.nurseId.toString() ?? "",
+                //     roomId: data.bookSchedule?.roomId,
+                //     userName:
+                //     "${data.nurse?.activeNurse?.firstName} ${data.nurse?.activeNurse?.lastName}");
               }).paddingSymmetric(horizontal: 5)
               : view.joinButtonView(
               "Join at ${data.bookSchedule?.availability?.startTime}",
@@ -84,30 +83,30 @@ class _NurseTodayConsultationScreenState extends State<NurseTodayConsultationScr
     );
   }
 
-  startVideoCall(
-      {required String doctorId,
-        required String roomId,
-        required String userName}) async {
-    MeetingModeProvider meetingModeProvider =
-    Provider.of<MeetingModeProvider>(context, listen: false);
-    meetingModeProvider.switchMeetingCategory(isAudio: false);
-    await MeetingModeProvider.getMeetingToken(
-        userId: "doctor_id_$doctorId", roomId: roomId, role: nurseRoleName)
-        .then((value) => {
-      if (value != '')
-        {
-          start100msService(
-            context,
-            userName: userName,
-            meetingToken: value,
-            meetingMode: MeetingMode.Video,
-          )
-        }
-      else
-        {Fluttertoast.showToast(msg: "Can't get token")}
-    });
-  }
-
+  // startVideoCall(
+  //     {required String doctorId,
+  //       required String roomId,
+  //       required String userName}) async {
+  //   MeetingModeProvider meetingModeProvider =
+  //   Provider.of<MeetingModeProvider>(context, listen: false);
+  //   meetingModeProvider.switchMeetingCategory(isAudio: false);
+  //   await MeetingModeProvider.getMeetingToken(
+  //       userId: "doctor_id_$doctorId", roomId: roomId, role: nurseRoleName)
+  //       .then((value) => {
+  //     if (value != '')
+  //       {
+  //         start100msService(
+  //           context,
+  //           userName: userName,
+  //           meetingToken: value,
+  //           meetingMode: MeetingMode.Video,
+  //         )
+  //       }
+  //     else
+  //       {Fluttertoast.showToast(msg: "Can't get token")}
+  //   });
+  // }
+  //
   noAppointmentView() {
     return Center(
       child: Text(

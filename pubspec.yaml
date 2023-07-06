@@ -120,7 +120,7 @@ dev_dependencies:
 
   dio: any
   #100ms
-  hmssdk_flutter: ^1.6.0
+  hmssdk_flutter: ^1.7.1
   path_provider:
   dropdown_button2: ^2.0.0
   focus_detector:
