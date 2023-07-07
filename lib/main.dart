@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:healthcaredoctor2050/utils/firebase/firebase_options.dart';
+import 'package:healthcaredoctor2050/views/nurse/controllers/providers/appointment/nurse_today_appointment_provider.dart';
 import 'package:healthcaredoctor2050/views/nurse/controllers/providers/login/nurse_auth_provider.dart';
 import 'package:healthcaredoctor2050/views/nurse/controllers/providers/login/nurse_details_provider.dart';
+import 'package:healthcaredoctor2050/widgets/100ms/providers/meeting_mode_provider.dart';
 import 'package:healthcaredoctor2050/widgets/screens/splash/splash_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -24,7 +26,11 @@ Future<void> main() async{
     ChangeNotifierProvider<NurseAuthProvider>.value(
         value: NurseAuthProvider()),
     ChangeNotifierProvider<NurseAuthProvider>.value(
-        value: NurseAuthProvider())
+        value: NurseAuthProvider()),
+    ChangeNotifierProvider<NurseTodayAppointmentProvider>.value(
+        value: NurseTodayAppointmentProvider()),
+    ChangeNotifierProvider<MeetingModeProvider>.value(
+        value: MeetingModeProvider())
   ],child: MyApp(),),);
 }
 

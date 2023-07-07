@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_utils/src/extensions/widget_extensions.dart';
 import 'package:healthcaredoctor2050/Utils/sizes/app_sizes.dart';
 
-import '../../../../../utils/colors/colors.dart';
+import '../../../../../../utils/colors/colors.dart';
 
 class NurseTodayConsultationWidgets {
   BuildContext context;
@@ -161,14 +161,13 @@ class NurseTodayConsultationWidgets {
         child: Container(
           height: 40,
           decoration: BoxDecoration(
-            color: color,
-            borderRadius: const BorderRadius.all(Radius.circular(6))
-          ),
+              color: color,
+              borderRadius: const BorderRadius.all(Radius.circular(6))),
           child: Center(
             child: Text(
               title,
-              style: TextStyle(color: textColor,fontSize: 14),
-            ).paddingSymmetric(horizontal: 20,vertical: 5),
+              style: TextStyle(color: textColor, fontSize: 14),
+            ).paddingSymmetric(horizontal: 20, vertical: 5),
           ),
         ),
       ),

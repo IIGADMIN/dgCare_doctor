@@ -8,6 +8,8 @@ import 'package:healthcaredoctor2050/views/nurse/views/screens/home/nurse_home_w
 import '../../../../../utils/constants/constant_data.dart';
 import '../../../controllers/providers/counter/nurse_consultation_counter_provider.dart';
 import '../drawer_navigation/navigation_drawer_widget.dart';
+import '../today_consultation/audio/nurse_today_audio_appointment_screen.dart';
+import '../today_consultation/video/nurse_today_video_consultation_screen.dart';
 
 class NurseHomeScreen extends StatefulWidget {
   const NurseHomeScreen({super.key});
@@ -57,9 +59,10 @@ class _NurseHomeScreenState extends State<NurseHomeScreen> {
             getUserType();
           })),
       body: ListView(
+        padding: EdgeInsets.symmetric(horizontal: 10),
         children: [
           view.nurseDetailsHomeView(),
-          20.height,
+          10.height,
           view.headerConsultationView(title: "Today's Appointments"),
           5.height,
           Row(
@@ -71,20 +74,20 @@ class _NurseHomeScreenState extends State<NurseHomeScreen> {
                   counter: "90",
                   icon: Icons.video_call_outlined,
                 bgColor: Colors.white,
-                navigateTo: Container()
+                navigateTo: const NurseTodayVideoConsultationScreen()
               ),
+              10.width,
               view.todayAppointmentCounterItemView(
                   title: "Audio Consultation",
                   imagePath: audioImagePath,
                   counter: "90",
                   icon: Icons.phone,
                   bgColor: Colors.grey,
-                navigateTo: Container()
+                navigateTo: NurseTodayAudioAppointmentsScreen()
               )
             ],
           ),
-
-          20.height,
+          10.height,
           view.headerConsultationView(title: "Upcoming Appointments"),
           5.height,
           Row(
@@ -98,6 +101,7 @@ class _NurseHomeScreenState extends State<NurseHomeScreen> {
                   bgColor: Colors.white,
                   navigateTo: Container()
               ),
+              10.width,
               view.todayAppointmentCounterItemView(
                   title: "Audio Consultation",
                   imagePath: audioImagePath,

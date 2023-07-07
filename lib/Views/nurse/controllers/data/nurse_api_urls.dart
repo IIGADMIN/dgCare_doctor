@@ -15,3 +15,7 @@ Uri appointmentCounterApi = convertToUrl(path: "${completePathUrl}service-provid
 /// today doctor appointments
 Uri todayDoctorVideoAppointmentsApi(String consultationTypeId) => convertToUrl(
     path: "${completePathUrl}service-provider/consultation/today?ConsultTypeId=$consultationTypeId");
+
+/// meeting
+String getNurseMeetingToken = "https://prod-in2.100ms.live/hmsapi/2050healthcare.app.100ms.live/api/token";
+// https://prod-in2.100ms.live/hmsapi/2050healthcare.app.100ms.live/

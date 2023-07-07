@@ -143,7 +143,7 @@ class NurseHomeWidgets {
       child: Card(
         color: bgColor,
         shape: circularBorderShape(
-            borderRadius: 10, borderColor: mainColor, borderSize: 5),
+            borderRadius: 10, borderColor: mainColor, borderSize: 2),
         elevation: 4,
         child: Column(
           children: [
@@ -164,7 +164,7 @@ class NurseHomeWidgets {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 SizedBox(
-                  width: screenWidth(context) / 3,
+                  width: screenWidth(context) / 3.5 ,
                   height: screenHeight(context) / 5,
                   child: Image.asset(imagePath),
                 ),
