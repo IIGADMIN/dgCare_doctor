@@ -84,10 +84,10 @@ class _PipViewState extends State<PipView> {
                                     peerTrackToDisplay.item2)
                                 ? Semantics(
                                     label: "fl_video_off",
-                                    child: AudioLevelAvatar())
+                                    child: const AudioLevelAvatar())
                                 : HMSVideoView(
-                                    key: Key(peerTrackToDisplay.item1!.trackId +
-                                        "pipView"),
+                                    key: Key(
+                                        "${peerTrackToDisplay.item1!.trackId}pipView"),
                                     track: peerTrackToDisplay.item1!,
                                     scaleType:
                                         (peerTrackToDisplay.item1!.source !=
@@ -95,7 +95,7 @@ class _PipViewState extends State<PipView> {
                                             ? ScaleType.SCALE_ASPECT_FIT
                                             : ScaleType.SCALE_ASPECT_FILL,
                                     setMirror: false,
-                                    matchParent: false);
+                                  );
                           },
                         ));
               })),

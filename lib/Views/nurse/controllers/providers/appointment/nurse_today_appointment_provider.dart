@@ -23,7 +23,7 @@ class NurseTodayAppointmentProvider with ChangeNotifier {
     _getTodayNurseAppointmentsData=[];
 
     await httpHelper
-        .httpGetRequest(todayDoctorVideoAppointmentsApi(consulTypeId),
+        .httpGetRequest(todayNurseAppointmentsApi(consulTypeId),
             (apiStatus, responseData) {
          
           if (apiStatus == true) {

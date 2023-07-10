@@ -10,6 +10,8 @@ import '../../../controllers/providers/counter/nurse_consultation_counter_provid
 import '../drawer_navigation/navigation_drawer_widget.dart';
 import '../today_consultation/audio/nurse_today_audio_appointment_screen.dart';
 import '../today_consultation/video/nurse_today_video_consultation_screen.dart';
+import '../upcoming/audio/nurse_upcoming_audio_consultation_screen.dart';
+import '../upcoming/video/nurse_upcoming_video_consultation_screen.dart';
 
 class NurseHomeScreen extends StatefulWidget {
   const NurseHomeScreen({super.key});
@@ -52,14 +54,14 @@ class _NurseHomeScreenState extends State<NurseHomeScreen> {
   Widget build(BuildContext context) {
     var view = NurseHomeWidgets(context: context);
     return Scaffold(
-      drawer: const NavigationDrawerWidget(),
+      drawer: const NurseDrawerWidget(),
       appBar: PreferredSize(
           preferredSize: Size(screenWidth(context), 55),
           child: view.nurseHomeAppBarView(onRefresh: () {
             getUserType();
           })),
       body: ListView(
-        padding: EdgeInsets.symmetric(horizontal: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 10),
         children: [
           view.nurseDetailsHomeView(),
           10.height,
@@ -83,7 +85,7 @@ class _NurseHomeScreenState extends State<NurseHomeScreen> {
                   counter: "90",
                   icon: Icons.phone,
                   bgColor: Colors.grey,
-                navigateTo: NurseTodayAudioAppointmentsScreen()
+                navigateTo: const NurseTodayAudioAppointmentsScreen()
               )
             ],
           ),
@@ -99,7 +101,7 @@ class _NurseHomeScreenState extends State<NurseHomeScreen> {
                   counter: "9",
                   icon: Icons.video_call_outlined,
                   bgColor: Colors.white,
-                  navigateTo: Container()
+                  navigateTo: const NurseUpcomingVideoConsultationScreen()
               ),
               10.width,
               view.todayAppointmentCounterItemView(
@@ -108,7 +110,7 @@ class _NurseHomeScreenState extends State<NurseHomeScreen> {
                   counter: "90",
                   icon: Icons.phone,
                   bgColor: Colors.grey,
-                  navigateTo: Container()
+                  navigateTo: const NurseUpcomingAudioConsultationScreen()
               )
             ],
           )
