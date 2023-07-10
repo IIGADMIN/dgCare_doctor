@@ -5,7 +5,7 @@ import '../../../../../utils/constants/constant_data.dart';
 import '../../../../../utils/data/local_data_keys.dart';
 import '../../../../../utils/data/shared_preference.dart';
 import '../../../../../widgets/app_widgets/notification/app_notification_view.dart';
-import '../../../Models/doctor_details_model.dart';
+import '../../../models/doctor_details_model.dart';
 import '../../data/doctor_api_urls.dart';
 
 
@@ -78,7 +78,7 @@ class DoctorAuthProvider with ChangeNotifier {
     await storeStringToLocal(userTypeKey, userType);
     if (userType == nurseCode) {
       var data = DoctorDetailsModel.fromJson(responseData);
-      _authToken = data.data?.token ?? "Invalid token";
+      _authToken = data.data?.token== "null" ? "Invalid token" :"";
       await storeStringToLocal(
           userTokenKey, data.data?.token ?? "Invalid token");
       await storeBoolToLocal(loggedInKey, true);

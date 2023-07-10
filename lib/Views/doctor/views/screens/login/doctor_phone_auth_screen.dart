@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get_utils/get_utils.dart';
 import 'package:healthcaredoctor2050/utils/sizes/app_sizes.dart';
@@ -11,8 +10,9 @@ import 'package:provider/provider.dart';
 import '../../../../../utils/colors/colors.dart';
 import '../../../../../widgets/app_widgets/app_button_view.dart';
 import '../../../../../widgets/loader_dialog_view.dart';
+import '../../../controllers/providers/Login/doctor_phone_otp_screen.dart';
 import '../../../controllers/providers/login/doctor_auth_provider.dart';
-import 'doctor_phone_otp_screen.dart';
+import 'doctor_auth_widget.dart';
 
 class DoctorPhoneAuthScreen extends StatefulWidget {
   final String title;
@@ -21,9 +21,9 @@ class DoctorPhoneAuthScreen extends StatefulWidget {
 
   const DoctorPhoneAuthScreen(
       {Key? key,
-        required this.title,
-        required this.imagePath,
-        required this.profileType})
+      required this.title,
+      required this.imagePath,
+      required this.profileType})
       : super(key: key);
   static String? phoneNumber;
 
@@ -32,6 +32,7 @@ class DoctorPhoneAuthScreen extends StatefulWidget {
 }
 
 class _DoctorPhoneAuthScreenState extends State<DoctorPhoneAuthScreen> {
+
   bool connected = false;
 
   String buttonText = "Get OTP";
@@ -53,7 +54,7 @@ class _DoctorPhoneAuthScreenState extends State<DoctorPhoneAuthScreen> {
     var height = screenHeight(context);
     var width = screenWidth(context);
     final authProvider = Provider.of<DoctorAuthProvider>(context, listen: false);
-    var view = NurseAuthWidgets(context: context);
+    var view = DoctorAuthWidgets(context: context);
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -69,11 +70,11 @@ class _DoctorPhoneAuthScreenState extends State<DoctorPhoneAuthScreen> {
             ),
             Center(
                 child: Text(
-                  "Login As ${widget.title}",
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTextStyles.boldTextStyle(),
-                )),
+              "Login As ${widget.title}",
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTextStyles.boldTextStyle(),
+            )),
             Padding(
               padding: const EdgeInsets.only(top: 20),
               child: Container(
@@ -124,51 +125,51 @@ class _DoctorPhoneAuthScreenState extends State<DoctorPhoneAuthScreen> {
             20.height,
             _isAcceptedTermAndConditions
                 ? AppButtonView(
-              buttonText: buttonText,
-              onPressed: () async {
-                if (_phoneController!.text.length < 10) {
-                  FToast().showToast(
-                      child: const Text("Mobile number should be 10 digits"));
-                } else {
-                  if (!mounted) return;
-                  LoaderDialogView(context).showLoadingDialog();
-                  await authProvider.mobileNumberVerification(
-                      phoneNo: internationalNumber.toString(),
-                      userType: widget.profileType);
-                  if(!mounted) return;
-                  LoaderDialogView(context).dismissLoadingDialog();
-                  if (authProvider.mobileStatus == true) {
-                    if (!mounted) return;
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) =>
-                                DoctorOTPVerificationScreen(
-                                  phoneNumber:
-                                  internationalNumber.toString(),
-                                  userTYpe: widget.profileType,
-                                )));
-                  } else {
-                    if(!mounted) return;
-                    NurseAuthWidgets(context: context)
-                        .showWrongNumberDialog(
-                        internationalNumber.toString(), widget.title);
-                  }
-                }
-              }, context: context,
-            ).paddingSymmetric(horizontal: 10)
+                    buttonText: buttonText,
+                    onPressed: () async {
+                      if (_phoneController!.text.length < 10) {
+                        FToast().showToast(
+                            child: const Text("Mobile number should be 10 digits"));
+                      } else {
+                        if (!mounted) return;
+                        LoaderDialogView(context).showLoadingDialog();
+                        await authProvider.mobileNumberVerification(
+                            phoneNo: internationalNumber.toString(),
+                            userType: widget.profileType);
+                        if(!mounted) return;
+                        LoaderDialogView(context).dismissLoadingDialog();
+                        if (authProvider.mobileStatus == true) {
+                          if (!mounted) return;
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      DoctorOTPVerificationScreen(
+                                        phoneNumber:
+                                            internationalNumber.toString(),
+                                        userTYpe: widget.profileType,
+                                      )));
+                        } else {
+                          if(!mounted) return;
+                          NurseAuthWidgets(context: context)
+                              .showWrongNumberDialog(
+                                  internationalNumber.toString(), widget.title);
+                        }
+                      }
+                    }, context: context,
+                  ).paddingSymmetric(horizontal: 10)
                 : ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey,
-                    fixedSize: Size(width, height / 18)),
-                onPressed: () {
-                  Fluttertoast.showToast(
-                      msg: "Please accept Terms and conditions");
-                },
-                child: Text(
-                  "Get OTP",
-                  style: boldTextStyle(color: Colors.white),
-                )).paddingSymmetric(horizontal: 10),
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.grey,
+                        fixedSize: Size(width, height / 18)),
+                    onPressed: () {
+                      Fluttertoast.showToast(
+                          msg: "Please accept Terms and conditions");
+                    },
+                    child: Text(
+                      "Get OTP",
+                      style: boldTextStyle(color: Colors.white),
+                    )).paddingSymmetric(horizontal: 10),
           ],
         ),
       ),

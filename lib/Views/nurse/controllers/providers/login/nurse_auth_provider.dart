@@ -116,11 +116,11 @@ class UserDetailsModel {
   String designation;
 
   UserDetailsModel(
-      {required this.firstName,
-      required this.lastName,
-      required this.userId,
-      required this.mobile,
-      required this.designation,
-      required this.education,
-      required this.image});
+    {required this.firstName,
+    required this.lastName,
+    required this.userId,
+    required this.mobile,
+    required this.designation,
+    required this.education,
+    required this.image});
 }
