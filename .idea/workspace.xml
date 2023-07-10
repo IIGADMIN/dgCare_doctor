@@ -4,33 +4,29 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5306b947-fab3-4cd6-9756-ab96f19ff962" name="Changes" comment="doctor login">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_5_2023_11_35_AM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Views/doctor/controllers/data/doctor_api_urls.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Views/doctor/controllers/providers/login/doctor_auth_provider.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Views/doctor/controllers/providers/login/doctor_details_provider.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Views/doctor/views/screens/login/doctor_auth_widgets.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Views/doctor/views/screens/login/doctor_phone_auth_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Views/doctor/views/screens/login/doctor_phone_otp_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/controllers/data/nurse_api_urls.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/no_internet_screen/no_internet_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/screens/no_internet_screen/no_internet_widget.dart" afterDir="false" />
+    <list default="true" id="5306b947-fab3-4cd6-9756-ab96f19ff962" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/controllers/datas/nurse_api_urls.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/controllers/providers/login/nurse_auth_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/controllers/providers/login/nurse_details_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/models/nuser_details_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/views/screens/login/nurse_auth_widgets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/views/screens/login/nurse_phone_auth_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/views/screens/login/nurse_phone_otp_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/styles/image_style.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/app_widgets/app_button_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/app_widgets/no_internent_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/app_widgets/notification/app_notification_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/app_widgets/notification/notification_service.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Views/doctor/Models/doctor_details_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04-07-2023_16_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04-07-2023_16_17__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Views/doctor/controllers/datas/doctor_urls.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Views/nurse/controllers/datas/nurse_api_urls.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Views/nurse/controllers/providers/login/nurse_auth_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Views/nurse/controllers/providers/login/nurse_auth_provider.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/datas/base_urls.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/data/base_urls.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/datas/local_data_keys.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/datas/shared_preference.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/doctor/views/screens/home/doctor_home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/doctor/views/screens/home/doctor_home_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/nurse/views/screens/home/nurse_home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/nurse/views/screens/home/nurse_home_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/nurse/views/screens/home/nurse_home_widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/nurse/views/screens/home/nurse_home_widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/loader_dialog_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/loader_dialog_view.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/widgets/screens/profile_selection/profile_selection_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/screens/profile_selection/profile_selection_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/screens/request_registration/request_registration_widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/screens/request_registration/request_registration_widgets.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="sc/doctor_login" />
+        <entry key="$PROJECT_DIR$" value="aa/set_up_project" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,29 +60,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Flutter/IIG Projects/2023/dgCare_doctor/lib/views/doctor/views/screens&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "D:/ansar/iig projects/2050Healthcare/dgCare_doctor/lib/utils/styles",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Flutter\IIG Projects\2023\dgCare_doctor\lib\views\doctor\views\screens" />
-      <recent name="C:\Flutter\IIG Projects\2023\dgCare_doctor\lib\views\ambulance\models" />
       <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\utils\styles" />
       <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\widgets\app_widgets" />
       <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\nurse\views\screens\login" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\nurse\controllers\providers\login" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\nurse\models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Flutter\IIG Projects\2023\dgCare_doctor\lib\utils\data" />
       <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\widgets\app_widgets\notification" />
       <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\nurse\views\screens\login" />
     </key>
@@ -118,12 +112,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="just updated" />
-    <MESSAGE value="Merge branch 'aa/nurse/authentication' of https://github.com/IIGADMIN/dgCare_doctor into sc/doctor_login&#10;&#10; Conflicts:&#10;&#9;.idea/libraries/Dart_Packages.xml&#10;&#9;.idea/libraries/Dart_Packages2.xml&#10;&#9;.idea/workspace.xml" />
-    <MESSAGE value="doctor login" />
-    <option name="LAST_COMMIT_MESSAGE" value="doctor login" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
