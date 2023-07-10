@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:healthcaredoctor2050/utils/firebase/firebase_options.dart';
+import 'package:healthcaredoctor2050/views/doctor/controllers/providers/Login/doctor_auth_provider.dart';
 import 'package:healthcaredoctor2050/views/nurse/controllers/providers/login/nurse_auth_provider.dart';
 import 'package:healthcaredoctor2050/views/nurse/controllers/providers/login/nurse_details_provider.dart';
 import 'package:healthcaredoctor2050/widgets/screens/splash/splash_screen.dart';
@@ -22,7 +23,9 @@ Future<void> main() async{
     ChangeNotifierProvider<NurseDetailsProvider>.value(
         value: NurseDetailsProvider()),
     ChangeNotifierProvider<NurseAuthProvider>.value(
-        value: NurseAuthProvider())
+        value: NurseAuthProvider()),
+    ChangeNotifierProvider<DoctorAuthProvider>.value(
+        value: DoctorAuthProvider())
   ],child: MyApp(),),);
 }
 

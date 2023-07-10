@@ -4,6 +4,7 @@ import 'package:healthcaredoctor2050/widgets/screens/profile_selection/profile_s
 import 'package:nb_utils/nb_utils.dart';
 
 import '../../../utils/constants/constant_data.dart';
+import '../../../views/doctor/views/screens/login/doctor_phone_auth_screen.dart';
 import '../../../views/nurse/views/screens/login/nurse_phone_auth_screen.dart';
 import '../request_registration/request_registration_widgets.dart';
 
@@ -75,7 +76,9 @@ class _ProfileSelectionScreenState extends State<ProfileSelectionScreen> {
                 height: height / 3,
                 width: width - width / 16, onTap: () {
               contactUsView.showContactAndLoginBottomSheet(context,
-                  title: "Doctor", loginFor: Container());
+                  title: "Doctor", loginFor: NursePhoneAuthScreen(profileType: doctorCode,
+                      imagePath: doctorImage,
+                      title: "Doctor"));
             }, imagePath: doctorImage)
           ],
         ),
