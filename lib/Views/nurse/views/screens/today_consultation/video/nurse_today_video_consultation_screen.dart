@@ -5,8 +5,6 @@ import '../../../../../../utils/constants/constant_data.dart';
 import '../../../../../../widgets/100ms/enum/meeting_mode.dart';
 import '../../../../../../widgets/100ms/providers/meeting_mode_provider.dart';
 import '../../../../../../widgets/100ms/start_video_service.dart';
-import '../../../../../../widgets/loader_dialog_view.dart';
-import '../../../../controllers/providers/appointment/nurse_today_appointment_provider.dart';
 import '../../../../models/today_nurse_appointment_model.dart';
 import 'nurse_today_consultation_widgets.dart';
 import 'package:nb_utils/nb_utils.dart';
@@ -23,28 +21,39 @@ class _NurseTodayVideoConsultationScreenState
     extends State<NurseTodayVideoConsultationScreen> {
   @override
   Widget build(BuildContext context) {
+    var nurseData = [
+      myData,myData,myData
+    ];
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("Video Appointments"),
         backgroundColor: mainColor,
       ),
-      body: Consumer<NurseTodayAppointmentProvider>(
-        builder: (BuildContext context, value, Widget? child) {
-          List<TodayNurseConsultationData> data =
-              value.getTodayNurseAppointmentsData;
-          return value.loaderStatus == false
-              ? data.isNotEmpty
-                  ? ListView.builder(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 10, vertical: 10),
-                      itemCount: data.length,
-                      itemBuilder: (context, index) {
-                        return _cardItem(data[index]);
-                      })
-                  : const ScreenLoadingView()
-              : noAppointmentView();
-        },
-      ),
+      body: ListView.builder(
+          padding: const EdgeInsets.symmetric(
+              horizontal: 10, vertical: 10),
+          itemCount: nurseData.length,
+          itemBuilder: (context, index) {
+            return _cardItem(nurseData[index]);
+          }),
+      // body: Consumer<NurseTodayAppointmentProvider>(
+      //   builder: (BuildContext context, value, Widget? child) {
+      //     List<TodayNurseConsultationData> data =
+      //         value.getTodayNurseAppointmentsData;
+      //     return value.loaderStatus == false
+      //         ? nurseData.isNotEmpty
+      //             ? ListView.builder(
+      //                 padding: const EdgeInsets.symmetric(
+      //                     horizontal: 10, vertical: 10),
+      //                 itemCount: nurseData.length,
+      //                 itemBuilder: (context, index) {
+      //                   return _cardItem(nurseData[index]);
+      //                 })
+      //             : const ScreenLoadingView()
+      //         : noAppointmentView();
+      //   },
+      // ),
     );
   }
 
@@ -96,8 +105,6 @@ class _NurseTodayVideoConsultationScreenState
         Provider.of<MeetingModeProvider>(context, listen: false);
     meetingModeProvider.switchMeetingCategory(isAudio: false);
 
-    var myToken =
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoyLCJ0eXBlIjoiYXBwIiwiYXBwX2RhdGEiOm51bGwsImFjY2Vzc19rZXkiOiI2NDFhOTA3YWE2OTUxNDgyYWQ4MGM3MDciLCJyb2xlIjoibnVyc2UiLCJyb29tX2lkIjoiNjRhNjYyMDU5ODU4NmI3YjE0ZDFhOTRhIiwidXNlcl9pZCI6Ijc5ZTY0YjdiLTQyYTktNGE2Ny1hNzgwLTRiY2RlOWUxYTA0ZCIsImV4cCI6MTY4ODcxMjA3MiwianRpIjoiMGYyNTgyNzYtMjFlNC00NTkzLTg5Y2YtM2Q4MzhjY2RkNzEyIiwiaWF0IjoxNjg4NjI1NjcyLCJpc3MiOiI2NDFhOTA3YWE2OTUxNDgyYWQ4MGM3MDUiLCJuYmYiOjE2ODg2MjU2NzIsInN1YiI6ImFwaSJ9.8O2Q22oFg9Uhzd1bxNm4NuIYtlY-zmA4GAXNfM_GfXQ";
     await MeetingModeProvider.getMeetingToken(
             userId: "doctor_id_$doctorId", roomId: roomId, role: nurseRoleName)
         .then((value) => {
@@ -123,4 +130,41 @@ class _NurseTodayVideoConsultationScreenState
       ),
     );
   }
+
+  TodayNurseConsultationData myData = TodayNurseConsultationData(
+    nurse: TodayAppointmentNurseData(
+      activeNurse: TodayAppointmentActiveNurseData(
+        roleId: 12,
+        firstName: "Nurse",
+        lastName: "name",
+        mobileNumber: 1234567890,
+        userId: 1,
+        email: "nurse@gmail.com",
+      )
+    ),
+    bookScheduleId: 12,
+    bookSchedule: TodayNurseBookScheduleData(
+      bookScheduleId: 1,
+      mobileNumber: 1234567890,
+      consultTypeId: 1,
+      availability: TodayNurseAvailabilityData(
+        endTime: "12:30 PM",
+        startTime: "1:00 PM",
+      ),
+      gender: TodayNurseGenderData(
+        genderId: 1,
+        genderName: "Male",
+      ),
+      parentBookingId: 1,
+      patientAge: 20,
+      patientEmail: "patient@gmail.com",
+      patientFirstName: "Patient",
+      patientLastName: "name",
+      patientPincode: 123456,
+      specialization:TodayNurseSpecializationData(
+        specializationName: "Specialization",
+      )
+    )
+  );
+
 }

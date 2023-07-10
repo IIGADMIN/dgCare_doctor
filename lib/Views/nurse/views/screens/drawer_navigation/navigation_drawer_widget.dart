@@ -1,14 +1,20 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:healthcaredoctor2050/views/nurse/views/screens/history/history_nurse_video_consultation_screen.dart';
 import 'package:healthcaredoctor2050/views/nurse/views/screens/profile/nurse_profile_screen.dart';
 import 'package:nb_utils/nb_utils.dart';
 import '../../../../../utils/colors/colors.dart';
 import '../../../../../widgets/app_widgets/app_custom_dialog.dart';
 import '../../../../../widgets/screens/profile_selection/profile_selection_screen.dart';
 
-class NavigationDrawerWidget extends StatelessWidget {
-  const NavigationDrawerWidget({Key? key}) : super(key: key);
+class NurseDrawerWidget extends StatefulWidget {
+  const NurseDrawerWidget({Key? key}) : super(key: key);
 
+  @override
+  State<NurseDrawerWidget> createState() => _NurseDrawerWidgetState();
+}
+
+class _NurseDrawerWidgetState extends State<NurseDrawerWidget> {
   final padding = const EdgeInsets.symmetric(horizontal: 20);
 
   @override
@@ -21,7 +27,7 @@ class NavigationDrawerWidget extends StatelessWidget {
           buildHeader(
             name: name,
             onClicked: () async {
-              NurseProfileScreen().launch(context,
+              const NurseProfileScreen().launch(context,
                   pageRouteAnimation: PageRouteAnimation.Slide);
             },
           ),
@@ -37,13 +43,13 @@ class NavigationDrawerWidget extends StatelessWidget {
               icon: Icons.history,
               onClicked: () {
                 Navigator.of(context).pop();
+                const HistoryNurseVideoConsultationScreen().launch(context);
               }),
           const Divider(color: Colors.white70),
           buildMenuItem(
               text: 'Sign Out',
               icon: Icons.logout,
               onClicked: () async {
-                finish(context);
                 showDialog(
                     barrierDismissible: true,
                     context: context,
@@ -53,8 +59,8 @@ class NavigationDrawerWidget extends StatelessWidget {
                             SharedPreferences pref =
                                 await SharedPreferences.getInstance();
                             pref.clear();
-                            finish(context);
-                            ProfileSelectionScreen()
+                            if (!mounted) return;
+                            const ProfileSelectionScreen()
                                 .launch(context, isNewTask: true);
                           },
                           positiveText: 'Cancel',
@@ -101,7 +107,7 @@ class NavigationDrawerWidget extends StatelessWidget {
                 backgroundColor: Colors.white,
                 radius: 25,
                 child: Image.asset(
-                  "assets/Logo/logo_png.png",
+                  "assets/logo/logo_png.png",
                   width: 30,
                   height: 30,
                   fit: BoxFit.contain,

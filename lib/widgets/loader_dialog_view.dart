@@ -55,7 +55,7 @@ class ScreenLoadingView extends StatelessWidget {
                 height: 80,
               ),
               10.height,
-              Text("Please Wait...")
+              const Text("Please Wait...")
             ],
           ),
         ),
