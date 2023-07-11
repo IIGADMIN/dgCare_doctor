@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5306b947-fab3-4cd6-9756-ab96f19ff962" name="Changes" comment="nurse home updated" />
+    <list default="true" id="5306b947-fab3-4cd6-9756-ab96f19ff962" name="Changes" comment="nurse comment" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689060395042</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="nurse comment">
+      <created>1689060928292</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1689060928292</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,7 +159,8 @@
     <MESSAGE value="add upcoming and history" />
     <MESSAGE value="doctor updated" />
     <MESSAGE value="nurse home updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="nurse home updated" />
+    <MESSAGE value="nurse comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="nurse comment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
