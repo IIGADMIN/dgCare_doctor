@@ -56,7 +56,7 @@ class _ProfileSelectionScreenState extends State<ProfileSelectionScreen> {
                       loginFor: PharmacistPhoneAuthScreen(
                           title: "Pharmacist",
                           imagePath: pharmacyImage,
-                          profileType: pharmacistCode));
+                          profileType: pharmacyCode));
                 }, imagePath: pharmacyImage),
                 profileSelectionItemView(context,
                     title: "Nurse",

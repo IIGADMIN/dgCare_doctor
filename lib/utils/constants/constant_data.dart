@@ -5,12 +5,12 @@ const String notificationDescription = "This is 2050iCarePro notification descri
 
 const String doctorCode = "4";
 const String nurseCode = "12";
-const String pharmacistCode = "13";
+const String pharmacyCode = "13";
 
 String doctorRoleName="doctor";
 String consultantRoleName="consultant";
 String nurseRoleName="nurse";
-String pharmacistRoleName="pharmacist";
+String pharmacyRoleName="pharmacist";
 
 String videoConsultationId="1";
 String audioConsultationId="2";

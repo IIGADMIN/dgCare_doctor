@@ -12,6 +12,12 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'helpers/notification_helper.dart';
+import 'views/pharmacist/controllers/providers/pharmacist_auth_provider.dart';
+import 'views/pharmacist/controllers/providers/pharmacist_consultation_count_provider.dart';
+import 'views/pharmacist/controllers/providers/pharmacist_details_provider.dart';
+import 'views/pharmacist/controllers/providers/pharmacist_history_consultation_provider.dart';
+import 'views/pharmacist/controllers/providers/pharmacist_today_appointment_provider.dart';
+import 'views/pharmacist/controllers/providers/pharmacist_upcoming_consultation_provider.dart';
 
 Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();

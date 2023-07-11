@@ -19,7 +19,7 @@ class _NurseProfileScreenState extends State<NurseProfileScreen> {
   Widget build(BuildContext context) {
     var height = screenHeight(context);
     var width = screenWidth(context);
-    var view = NurseProfileWidgets(context: context);
+   // var view = NurseProfileWidgets(context: context); // situ
     return Scaffold(
       appBar: AppBar(
         backgroundColor: appBarColor,
@@ -44,7 +44,7 @@ class _NurseProfileScreenState extends State<NurseProfileScreen> {
                         borderRadius: const BorderRadius.only(
                             topRight: Radius.circular(20),
                             topLeft: Radius.circular(20))),
-                    child: view.nurseDetailsView(),
+                  //  child: view.nurseDetailsView(), // situ
                   ),
                 ),
                 Positioned(
@@ -54,8 +54,11 @@ class _NurseProfileScreenState extends State<NurseProfileScreen> {
                   child: Consumer<NurseDetailsProvider>(
                     builder: (BuildContext context, value, Widget? child) {
                       return Center(
-                        child: view.profileImageView(
-                            nurseImageUrl + data.getUserProfilePic),
+                        child: Container()
+
+                          // situ
+                        // view.profileImageView(
+                        //     nurseImageUrl + data.getUserProfilePic),
                       );
                     },
                   ),
