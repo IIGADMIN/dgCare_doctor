@@ -17,6 +17,7 @@ Uri todayNurseAppointmentsApi(String consultationTypeId) => convertToUrl(
     path: "${completePathUrl}service-provider/consultation/today?ConsultTypeId=$consultationTypeId");
 Uri upcomingNurseConsultationApi(String consultationTypeId) => convertToUrl(path: "${completePathUrl}service-provider/consultation/upcoming?ConsultTypeId=$consultationTypeId");
 Uri historyNurseConsultationApi(String consultTypeId) => convertToUrl(path: "${completePathUrl}service-provider/consultation/history?ConsultTypeId=$consultTypeId");
+
 /// meeting
 String getNurseMeetingToken = "https://prod-in2.100ms.live/hmsapi/2050healthcare.app.100ms.live/api/token";
 // https://prod-in2.100ms.live/hmsapi/2050healthcare.app.100ms.live/

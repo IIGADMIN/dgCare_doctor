@@ -4,8 +4,55 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5306b947-fab3-4cd6-9756-ab96f19ff962" name="Changes" comment="one time loged in 2">
-      <change beforePath="$PROJECT_DIR$/lib/views/doctor/controllers/providers/Login/doctor_phone_otp_screen.dart" beforeDir="false" />
+    <list default="true" id="5306b947-fab3-4cd6-9756-ab96f19ff962" name="Changes" comment="add upcoming and history">
+      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/views/screens/drawer_navigation/nurse_drawer_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/controllers/data/pharmacist_api_urls.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/controllers/providers/pharmacist_auth_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/controllers/providers/pharmacist_consultation_count_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/controllers/providers/pharmacist_details_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/controllers/providers/pharmacist_history_consultation_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/controllers/providers/pharmacist_today_appointment_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/controllers/providers/pharmacist_upcoming_consultation_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/models/pharmaciest_details_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/models/pharmacist_history_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/models/pharmacist_upcoming_consultation_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/models/today_pharmacist_appointment_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/consultations/history/pharmacist_history_item.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/consultations/history/pharmacist_history_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/consultations/history/pharmacist_history_widgets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/consultations/today/pharmacist_today_audio_consultation_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/consultations/today/pharmacist_today_consultation_widgets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/consultations/today/pharmacist_today_video_consultation_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/consultations/upcoming/pharmacist_upcoming_audio_consultation_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/consultations/upcoming/pharmacist_upcoming_consultation_widgets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/consultations/upcoming/pharmacist_upcoming_video_consultation_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/drawer/pharmacist_drawer_widgets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/home/pharmacist_home_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/home/pharmacy_home_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/login/pharmacist_auth_widgets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/login/pharmacist_phone_auth_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/login/pharmacist_phone_otp_verification_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/profile/pharmacist_profile_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Views/pharmacist/views/screens/profile/pharmacist_profile_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/nurse/controllers/data/nurse_api_urls.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Views/nurse/controllers/data/nurse_api_urls.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/nurse/controllers/providers/appointment/nurse_upcoming_consultation_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Views/nurse/controllers/providers/appointment/nurse_upcoming_consultation_provider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/nurse/views/screens/drawer_navigation/navigation_drawer_widget.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/nurse/views/screens/history/history_nurse_consultation_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Views/nurse/views/screens/history/history_nurse_consultation_item.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/nurse/views/screens/history/history_nurse_video_consultation_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Views/nurse/views/screens/history/history_nurse_video_consultation_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/nurse/views/screens/today_consultation/audio/nurse_today_audio_appointment_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Views/nurse/views/screens/today_consultation/audio/nurse_today_audio_appointment_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/nurse/views/screens/today_consultation/video/nurse_today_video_consultation_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Views/nurse/views/screens/today_consultation/video/nurse_today_video_consultation_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/nurse/views/screens/upcoming/audio/nurse_upcoming_audio_consultation_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Views/nurse/views/screens/upcoming/audio/nurse_upcoming_audio_consultation_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/nurse/views/screens/upcoming/video/nurse_upcoming_video_consultation_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Views/nurse/views/screens/upcoming/video/nurse_upcoming_video_consultation_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/pharmacy/views/screens/home/pharmacy_home_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/pharmacy/views/screens/home/pharmacy_home_widget.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/pharmacy/views/screens/profile/profile_home_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/pharmacy/views/screens/profile/profile_home_widget.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/nurse/views/screens/home/nurse_home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/nurse/views/screens/home/nurse_home_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/nurse/views/screens/profile/nurse_profile_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/nurse/views/screens/profile/nurse_profile_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/screens/profile_selection/profile_selection_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/screens/profile_selection/profile_selection_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +69,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="sc/splash_screen" />
+        <entry key="$PROJECT_DIR$" value="aa/nurse/upcoming" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,21 +93,23 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "flutter.performance.tool.window.visible": "true",
     "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "D:/ansar/iig projects/2050Healthcare/dgCare_doctor/lib/utils/styles",
+    "last_opened_file_path": "D:/ansar/iig projects/2050Healthcare/dgCare_doctor/lib/views/pharmacist/models",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\utils\styles" />
-      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\widgets\app_widgets" />
-      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\nurse\views\screens\login" />
-      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\nurse\controllers\providers\login" />
-      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\nurse\models" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\pharmacist\models" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\pharmacist\controllers\providers" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\nurse\controllers\providers" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\pharmacy\models" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\pharmacy\controllers\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\pharmacist\controllers\providers" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\nurse\views\screens\today_consultation\video" />
+      <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\widgets" />
       <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\widgets\app_widgets\notification" />
       <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\views\nurse\views\screens\login" />
     </key>
@@ -80,91 +129,42 @@
       <option name="presentableId" value="Default" />
       <updated>1688467767974</updated>
     </task>
-    <task id="LOCAL-00001" summary="doctor auth">
-      <created>1688981202095</created>
+    <task id="LOCAL-00001" summary="add notification view">
+      <created>1688536928616</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1688981202095</updated>
+      <updated>1688536928616</updated>
     </task>
-    <task id="LOCAL-00002" summary="doctor deteails">
-      <created>1688981437619</created>
+    <task id="LOCAL-00002" summary="add 100ms">
+      <created>1688562318267</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1688981437619</updated>
+      <updated>1688562318267</updated>
     </task>
-    <task id="LOCAL-00003" summary="doctor auth complete">
-      <created>1688981666647</created>
+    <task id="LOCAL-00003" summary="remove 100ms">
+      <created>1688619641068</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1688981666647</updated>
+      <updated>1688619641068</updated>
     </task>
-    <task id="LOCAL-00004" summary="doctor auth login point">
-      <created>1688991193426</created>
+    <task id="LOCAL-00004" summary="resolve 100ms issue">
+      <created>1688648541819</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1688991193426</updated>
+      <updated>1688648541819</updated>
     </task>
-    <task id="LOCAL-00005" summary="ambulance">
-      <created>1688991257353</created>
+    <task id="LOCAL-00005" summary="add upcoming and history">
+      <created>1688966131538</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1688991257353</updated>
+      <updated>1688966131538</updated>
     </task>
-    <task id="LOCAL-00006" summary="nurse phone otp screen">
-      <created>1688991383415</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1688991383415</updated>
-    </task>
-    <task id="LOCAL-00007" summary="nurse phone otp verify screen">
-      <created>1688994097714</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1688994097716</updated>
-    </task>
-    <task id="LOCAL-00008" summary="other details">
-      <created>1689052042352</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1689052042352</updated>
-    </task>
-    <task id="LOCAL-00009" summary="other details">
-      <created>1689052051895</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1689052051895</updated>
-    </task>
-    <task id="LOCAL-00010" summary="one time loged in">
-      <created>1689056021084</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1689056021084</updated>
-    </task>
-    <task id="LOCAL-00011" summary="one time loged in 1">
-      <created>1689056076470</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1689056076470</updated>
-    </task>
-    <task id="LOCAL-00012" summary="one time loged in 2">
-      <created>1689056332870</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1689056332870</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,27 +179,47 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="doctor deteails" />
-    <MESSAGE value="doctor auth complete" />
-    <MESSAGE value="doctor auth" />
-    <MESSAGE value="doctor auth login point" />
-    <MESSAGE value="ambulance" />
-    <MESSAGE value="doctor phone otp" />
-    <MESSAGE value="doctor phone otp screen" />
-    <MESSAGE value="nurse phone otp screen" />
-    <MESSAGE value="nurse phone otp verify screen" />
-    <MESSAGE value="doctor phone" />
-    <MESSAGE value="other details" />
-    <MESSAGE value="one time loged in" />
-    <MESSAGE value="one time loged in 1" />
-    <MESSAGE value="one time loged in 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="one time loged in 2" />
+    <MESSAGE value="add notification view" />
+    <MESSAGE value="add 100ms" />
+    <MESSAGE value="remove 100ms" />
+    <MESSAGE value="resolve 100ms issue" />
+    <MESSAGE value="add upcoming and history" />
+    <option name="LAST_COMMIT_MESSAGE" value="add upcoming and history" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <default-breakpoints>
-        <breakpoint type="dart-exception" />
-      </default-breakpoints>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/views/nurse/controllers/providers/login/nurse_auth_provider.dart</url>
+          <line>101</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/views/nurse/controllers/providers/login/nurse_auth_provider.dart</url>
+          <line>96</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/views/nurse/controllers/providers/login/nurse_auth_provider.dart</url>
+          <line>102</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/views/nurse/controllers/providers/login/nurse_auth_provider.dart</url>
+          <line>100</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/widgets/100ms/start_video_service.dart</url>
+          <line>49</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/views/pharmacist/views/screens/consultations/today/pharmacist_today_video_consultation_screen.dart</url>
+          <line>60</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
     </breakpoint-manager>
   </component>
 </project>

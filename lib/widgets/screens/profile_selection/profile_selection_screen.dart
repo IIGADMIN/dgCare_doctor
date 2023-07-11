@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:healthcaredoctor2050/utils/sizes/app_sizes.dart';
+import 'package:healthcaredoctor2050/views/pharmacist/views/screens/login/pharmacist_phone_auth_screen.dart';
 import 'package:healthcaredoctor2050/widgets/screens/profile_selection/profile_selection_widgets.dart';
 import 'package:nb_utils/nb_utils.dart';
 
@@ -51,7 +52,11 @@ class _ProfileSelectionScreenState extends State<ProfileSelectionScreen> {
                     height: height / 4.5,
                     width: width / 2 - width / 20, onTap: () {
                   contactUsView.showContactAndLoginBottomSheet(context,
-                      title: "Pharmacist", loginFor: Container());
+                      title: "Pharmacist",
+                      loginFor: PharmacistPhoneAuthScreen(
+                          title: "Pharmacist",
+                          imagePath: pharmacyImage,
+                          profileType: pharmacistCode));
                 }, imagePath: pharmacyImage),
                 profileSelectionItemView(context,
                     title: "Nurse",
