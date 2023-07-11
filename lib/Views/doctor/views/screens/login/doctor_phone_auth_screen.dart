@@ -13,7 +13,6 @@ import '../../../../../utils/colors/colors.dart';
 import '../../../../../widgets/app_widgets/app_button_view.dart';
 import '../../../../../widgets/loader_dialog_view.dart';
 import '../../../controllers/providers/Login/doctor_auth_provider.dart';
-import '../../../controllers/providers/Login/doctor_phone_otp_screen.dart';
 
 
 class DoctorPhoneAuthScreen extends StatefulWidget {
@@ -146,7 +145,7 @@ class _DoctorPhoneAuthScreenState extends State<DoctorPhoneAuthScreen> {
                         context,
                         MaterialPageRoute(
                             builder: (context) =>
-                                DoctorOTPVerificationScreen(
+                                DoctorOtpScreen(
                                   phoneNumber:
                                   internationalNumber.toString(),
                                   userTYpe: widget.profileType,
