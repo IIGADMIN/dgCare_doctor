@@ -76,7 +76,7 @@ class DoctorAuthProvider with ChangeNotifier {
   Future<void> convertResponseBaseOnUserData(
       String userType, Map<String, dynamic> responseData) async {
     await storeStringToLocal(userTypeKey, userType);
-    if (userType == nurseCode) {
+    if (userType == doctorCode) {
       var data = DoctorDetailsModel.fromJson(responseData);
       _authToken = data.data?.token== "null" ? "Invalid token" :"";
       await storeStringToLocal(
@@ -90,6 +90,7 @@ class DoctorAuthProvider with ChangeNotifier {
           designation: "NA",
           education: "NA",
           image: data.data?.userDetails?.doctor?.image ?? "NA"));
+      notifyListeners();
     }
   }
 
