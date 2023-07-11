@@ -7,7 +7,7 @@ import 'package:healthcaredoctor2050/utils/sizes/app_sizes.dart';
 import 'package:healthcaredoctor2050/views/nurse/views/screens/home/nurse_home_widgets.dart';
 import '../../../../../utils/constants/constant_data.dart';
 import '../../../controllers/providers/counter/nurse_consultation_counter_provider.dart';
-import '../drawer_navigation/navigation_drawer_widget.dart';
+import '../drawer_navigation/nurse_drawer_widget.dart';
 import '../today_consultation/audio/nurse_today_audio_appointment_screen.dart';
 import '../today_consultation/video/nurse_today_video_consultation_screen.dart';
 import '../upcoming/audio/nurse_upcoming_audio_consultation_screen.dart';

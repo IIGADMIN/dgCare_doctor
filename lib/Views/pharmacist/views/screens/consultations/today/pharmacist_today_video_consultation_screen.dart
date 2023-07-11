@@ -1,41 +1,43 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:healthcaredoctor2050/views/pharmacist/views/screens/consultations/today/pharmacist_today_consultation_widgets.dart';
 import 'package:provider/provider.dart';
 import '../../../../../../utils/colors/colors.dart';
+import 'package:nb_utils/nb_utils.dart';
+
 import '../../../../../../utils/constants/constant_data.dart';
 import '../../../../../../widgets/100ms/enum/meeting_mode.dart';
 import '../../../../../../widgets/100ms/providers/meeting_mode_provider.dart';
 import '../../../../../../widgets/100ms/start_video_service.dart';
-import '../../../../controllers/providers/appointment/nurse_today_appointment_provider.dart';
-import '../../../../models/today_nurse_appointment_model.dart';
-import 'nurse_today_consultation_widgets.dart';
-import 'package:nb_utils/nb_utils.dart';
+import '../../../../../../widgets/loader_dialog_view.dart';
+import '../../../../controllers/providers/pharmacist_today_appointment_provider.dart';
+import '../../../../models/today_pharmacist_appointment_model.dart';
 
-class NurseTodayVideoConsultationScreen extends StatefulWidget {
-  const NurseTodayVideoConsultationScreen({super.key});
+class PharmacistTodayVideoConsultationScreen extends StatefulWidget {
+  const PharmacistTodayVideoConsultationScreen({super.key});
 
   @override
-  State<NurseTodayVideoConsultationScreen> createState() =>
-      _NurseTodayVideoConsultationScreenState();
+  State<PharmacistTodayVideoConsultationScreen> createState() =>
+      _PharmacistTodayVideoConsultationScreenState();
 }
 
-class _NurseTodayVideoConsultationScreenState
-    extends State<NurseTodayVideoConsultationScreen> {
-  Timer? _timer = Timer(const Duration(seconds: 0), () {});
+class _PharmacistTodayVideoConsultationScreenState
+    extends State<PharmacistTodayVideoConsultationScreen> {
+  Timer? _timer = Timer.periodic(const Duration(seconds: 0), (timer) {});
 
   @override
   void initState() {
     super.initState();
     getData();
     _timer = Timer.periodic(const Duration(seconds: 5), (timer) {
-      getData();
+      // getData();
     });
   }
 
-  getData() async {
-    await Provider.of<NurseTodayAppointmentProvider>(context, listen: false)
-        .getTodayNurseVideoAppointments(videoConsultationId);
+  Future<void> getData() async {
+    Provider.of<PharmacistTodayAppointmentProvider>(context, listen: false)
+        .getTodayPharmacistAppointments(videoConsultationId);
   }
 
   @override
@@ -46,41 +48,33 @@ class _NurseTodayVideoConsultationScreenState
 
   @override
   Widget build(BuildContext context) {
-    var nurseData = [myData, myData, myData];
-
     return Scaffold(
       appBar: AppBar(
         title: const Text("Video Appointments"),
         backgroundColor: mainColor,
       ),
-      body: ListView.builder(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-          itemCount: nurseData.length,
-          itemBuilder: (context, index) {
-            return _cardItem(nurseData[index]);
-          }),
-      // body: Consumer<NurseTodayAppointmentProvider>(
-      //   builder: (BuildContext context, value, Widget? child) {
-      //     List<TodayNurseConsultationData> data =
-      //         value.getTodayNurseAppointmentsData;
-      //     return value.loaderStatus == false
-      //         ? nurseData.isNotEmpty
-      //             ? ListView.builder(
-      //                 padding: const EdgeInsets.symmetric(
-      //                     horizontal: 10, vertical: 10),
-      //                 itemCount: nurseData.length,
-      //                 itemBuilder: (context, index) {
-      //                   return _cardItem(nurseData[index]);
-      //                 })
-      //             : const ScreenLoadingView()
-      //         : noAppointmentView();
-      //   },
-      // ),
+      body: Consumer<PharmacistTodayAppointmentProvider>(
+        builder: (BuildContext context, value, Widget? child) {
+          List<PharmacistTodayConsultationData> data =
+              value.getTodayNurseAppointmentsData;
+          return value.loaderStatus == false
+              ? data.isNotEmpty
+                  ? ListView.builder(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 10, vertical: 10),
+                      itemCount: data.length,
+                      itemBuilder: (context, index) {
+                        return _cardItem(data[index]);
+                      })
+                  : noAppointmentView()
+              : const ScreenLoadingView();
+        },
+      ),
     );
   }
 
-  _cardItem(TodayNurseConsultationData data) {
-    var view = NurseTodayConsultationWidgets(context: context);
+  _cardItem(PharmacistTodayConsultationData data) {
+    var view = PharmacistTodayConsultationWidgets(context: context);
     return Card(
       elevation: 5,
       child: Column(
@@ -106,10 +100,10 @@ class _NurseTodayVideoConsultationScreenState
               ? view.joinButtonView("Start Video Call", color: Colors.green,
                   onTap: () {
                   startVideoCall(
-                      doctorId: data.nurse?.nurseId.toString() ?? "",
+                      doctorId: data.pharmacist?.pharmacistId.toString() ?? "",
                       roomId: data.bookSchedule?.roomId,
                       userName:
-                          "${data.nurse?.activeNurse?.firstName} ${data.nurse?.activeNurse?.lastName}");
+                          "${data.pharmacist?.activePharmacist?.firstName} ${data.pharmacist?.activePharmacist?.lastName}");
                 }).paddingSymmetric(horizontal: 5)
               : view.joinButtonView(
                   "Join at ${data.bookSchedule?.availability?.startTime}",
@@ -152,37 +146,4 @@ class _NurseTodayVideoConsultationScreenState
       ),
     );
   }
-
-  TodayNurseConsultationData myData = TodayNurseConsultationData(
-      nurse: TodayAppointmentNurseData(
-          activeNurse: TodayAppointmentActiveNurseData(
-        roleId: 12,
-        firstName: "Nurse",
-        lastName: "name",
-        mobileNumber: 1234567890,
-        userId: 1,
-        email: "nurse@gmail.com",
-      )),
-      bookScheduleId: 12,
-      bookSchedule: TodayNurseBookScheduleData(
-          bookScheduleId: 1,
-          mobileNumber: 1234567890,
-          consultTypeId: 1,
-          availability: TodayNurseAvailabilityData(
-            endTime: "12:30 PM",
-            startTime: "1:00 PM",
-          ),
-          gender: TodayNurseGenderData(
-            genderId: 1,
-            genderName: "Male",
-          ),
-          parentBookingId: 1,
-          patientAge: 20,
-          patientEmail: "patient@gmail.com",
-          patientFirstName: "Patient",
-          patientLastName: "name",
-          patientPincode: 123456,
-          specialization: TodayNurseSpecializationData(
-            specializationName: "Specialization",
-          )));
 }

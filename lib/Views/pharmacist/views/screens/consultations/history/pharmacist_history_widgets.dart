@@ -1,100 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:healthcaredoctor2050/utils/shapes/app_shapes.dart';
-import 'package:healthcaredoctor2050/utils/styles/text_style.dart';
-import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
-import '../../../../../Utils/colors/colors.dart';
-import '../../../../../helpers/date_and_time_converter.dart';
-import '../../../../../utils/constants/constant_data.dart';
-import '../../../../../widgets/loader_dialog_view.dart';
-import '../../../controllers/providers/appointment/nurse_history_consultation_provider.dart';
-import '../../../models/nurse_history_model.dart';
+import '../../../../../../helpers/date_and_time_converter.dart';
+import '../../../../../../utils/colors/colors.dart';
 import 'package:nb_utils/nb_utils.dart';
 
-class HistoryNurseConsultationItem extends StatefulWidget {
-  final String appointmentType;
-  const HistoryNurseConsultationItem({super.key, required this.appointmentType});
+class PharmacistHistoryWidgets{
+  BuildContext context;
+  PharmacistHistoryWidgets({required this.context});
 
-  @override
-  State<HistoryNurseConsultationItem> createState() => _HistoryNurseConsultationItemState();
-}
-
-class _HistoryNurseConsultationItemState extends State<HistoryNurseConsultationItem> {
-
-  Future<void> getNurseHistoryData() async {
-    var provider =
-    Provider.of<NurseHistoryConsultationProvider>(context, listen: false);
-    if (widget.appointmentType == "video") {
-      provider.getNurseHistories(videoConsultationId);
-    } else {
-      provider.getNurseHistories(audioConsultationId);
-    }
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    getNurseHistoryData();
-  }
-
-
-  @override
-  Widget build(BuildContext context) {
-    return Consumer<NurseHistoryConsultationProvider>(
-      builder: (BuildContext context, value, Widget? child) {
-        List<NurseHistoryConsultationData> data = value.getNurseHistoriesData;
-        return value.loaderStatus == false
-            ? data.isNotEmpty
-            ? ListView.builder(
-            padding: const EdgeInsets.symmetric(
-                horizontal: 5, vertical: 10),
-            itemCount: data.length,
-            itemBuilder: (context, index) {
-              return _nurseItemCardView(data[index]);
-            })
-            : _noHistoryAvailableView()
-            : const ScreenLoadingView();
-      },
-    );
-  }
-
-  _nurseItemCardView(NurseHistoryConsultationData data) {
-    return Card(
-      elevation: 10,
-      shape: circularBorderShape(),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          appointmentListHeaderView(
-              convertDate(
-                  format: dateFormatWithHalfMonthName,
-                  yourDate: data.bookSchedule?.scheduleDate ?? DateTime.now()),
-              radius: 4),
-          2.height,
-          Text(
-              "${data.bookSchedule?.patientFirstName} ${data.bookSchedule?.patientLastName}",
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: AppTextStyles.boldTextStyle(txtColor: textColor, size: 16)),
-          patientAgeAndGenderView(
-              data.bookSchedule?.patientAge.toString() ?? "NA",
-              data.bookSchedule?.gender?.genderName ?? "NA"),
-          patentMobileNumberView(
-              data.bookSchedule?.mobileNumber.toString() ?? ""),
-          2.height,
-          appointmentTitleTimingView(),
-          appointmentTimingValueView(
-              data.bookSchedule?.availability?.startTime ?? "NA",
-              data.bookSchedule?.availability?.endTime ?? "NA"),
-          5.height,
-          // _nurseDoctorDetailsView(data),
-          // _appointmentStatusViewButton(data.status, data.consultationType, context),
-        ],
-      ).paddingSymmetric(horizontal: 10, vertical: 5),
-    );
-  }
-
-  patientAgeAndGenderView(String age, String gender) {
+  Widget patientAgeAndGenderView(String age, String gender) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
@@ -135,7 +49,7 @@ class _HistoryNurseConsultationItemState extends State<HistoryNurseConsultationI
     );
   }
 
-  patentMobileNumberView(String number) {
+  Widget patentMobileNumberView(String number) {
     return Row(
       children: [
         const Text("Mobile Number : ",
@@ -154,7 +68,7 @@ class _HistoryNurseConsultationItemState extends State<HistoryNurseConsultationI
     );
   }
 
-  appointmentDateView(DateTime date) {
+  Widget appointmentDateView(DateTime date) {
     var format = DateFormat('dd MMM yyyy');
     var _date = format.format(date);
     return Row(
@@ -175,7 +89,7 @@ class _HistoryNurseConsultationItemState extends State<HistoryNurseConsultationI
     );
   }
 
-  appointmentTitleTimingView() {
+  Widget appointmentTitleTimingView() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
@@ -215,7 +129,7 @@ class _HistoryNurseConsultationItemState extends State<HistoryNurseConsultationI
     );
   }
 
-  appointmentTimingValueView(String startTime, String endTime) {
+  Widget appointmentTimingValueView(String startTime, String endTime) {
 
 
     return Row(
@@ -250,15 +164,6 @@ class _HistoryNurseConsultationItemState extends State<HistoryNurseConsultationI
               overflow: TextOverflow.ellipsis,
               style: const TextStyle(color: Colors.white, fontSize: 16)),
         ));
-  }
-
-  _noHistoryAvailableView() {
-    return Center(
-      child: Text(
-        "No History Available!",
-        style: AppTextStyles.boldTextStyle(txtColor: Colors.grey),
-      ),
-    );
   }
 
 }

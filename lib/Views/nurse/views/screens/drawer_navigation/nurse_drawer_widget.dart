@@ -15,7 +15,6 @@ class NurseDrawerWidget extends StatefulWidget {
 }
 
 class _NurseDrawerWidgetState extends State<NurseDrawerWidget> {
-  final padding = const EdgeInsets.symmetric(horizontal: 20);
 
   @override
   Widget build(BuildContext context) {
@@ -100,7 +99,7 @@ class _NurseDrawerWidgetState extends State<NurseDrawerWidget> {
       InkWell(
         onTap: onClicked,
         child: Container(
-          padding: padding.add(const EdgeInsets.symmetric(vertical: 30)),
+          padding: const EdgeInsets.symmetric(vertical: 30),
           child: Row(
             children: [
               CircleAvatar(

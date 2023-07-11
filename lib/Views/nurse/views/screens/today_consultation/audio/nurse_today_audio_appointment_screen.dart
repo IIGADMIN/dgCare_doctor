@@ -30,11 +30,15 @@ class _NurseTodayAudioAppointmentsScreenState
   @override
   void initState() {
     super.initState();
-
+    getData();
     _timer = Timer.periodic(const Duration(seconds: 5), (timer) {
-      Provider.of<NurseTodayAppointmentProvider>(context, listen: false)
-          .getTodayNurseVideoAppointments(audioConsultationId);
+      getData();
     });
+  }
+
+  Future<void> getData() async {
+    await Provider.of<NurseTodayAppointmentProvider>(context, listen: false)
+        .getTodayNurseVideoAppointments(audioConsultationId);
   }
 
   @override
@@ -45,41 +49,37 @@ class _NurseTodayAudioAppointmentsScreenState
 
   @override
   Widget build(BuildContext context) {
-
-    var nurseData = [
-      myData,myData,myData
-    ];
+    var nurseData = [myData, myData, myData];
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Audio Appointments"),
-        backgroundColor: mainColor,
-      ),
-       body: ListView.builder(
-            padding: const EdgeInsets.symmetric(
-                horizontal: 10, vertical: 10),
+        appBar: AppBar(
+          title: const Text("Audio Appointments"),
+          backgroundColor: mainColor,
+        ),
+        body: ListView.builder(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             itemCount: nurseData.length,
             itemBuilder: (context, index) {
               return _cardItem(nurseData[index]);
             })
-      // body: Consumer<NurseTodayAppointmentProvider>(
-      //   builder: (BuildContext context, value, Widget? child) {
-      //     List<TodayNurseConsultationData> data =
-      //         value.getTodayNurseAppointmentsData;
-      //     return value.loaderStatus == false
-      //         ? data.isNotEmpty
-      //             ? ListView.builder(
-      //                 padding: const EdgeInsets.symmetric(
-      //                     horizontal: 10, vertical: 10),
-      //                 itemCount: data.length,
-      //                 itemBuilder: (context, index) {
-      //                   return _cardItem(data[index]);
-      //                 })
-      //         : const ScreenLoadingView()
-      //         : noAppointmentView();
-      //   },
-      // ),
-    );
+        // body: Consumer<NurseTodayAppointmentProvider>(
+        //   builder: (BuildContext context, value, Widget? child) {
+        //     List<TodayNurseConsultationData> data =
+        //         value.getTodayNurseAppointmentsData;
+        //     return value.loaderStatus == false
+        //         ? data.isNotEmpty
+        //             ? ListView.builder(
+        //                 padding: const EdgeInsets.symmetric(
+        //                     horizontal: 10, vertical: 10),
+        //                 itemCount: data.length,
+        //                 itemBuilder: (context, index) {
+        //                   return _cardItem(data[index]);
+        //                 })
+        //         : const ScreenLoadingView()
+        //         : noAppointmentView();
+        //   },
+        // ),
+        );
   }
 
   _cardItem(TodayNurseConsultationData data) {
@@ -154,14 +154,13 @@ class _NurseTodayAudioAppointmentsScreenState
   TodayNurseConsultationData myData = TodayNurseConsultationData(
       nurse: TodayAppointmentNurseData(
           activeNurse: TodayAppointmentActiveNurseData(
-            roleId: 12,
-            firstName: "Nurse",
-            lastName: "name",
-            mobileNumber: 1234567890,
-            userId: 1,
-            email: "nurse@gmail.com",
-          )
-      ),
+        roleId: 12,
+        firstName: "Nurse",
+        lastName: "name",
+        mobileNumber: 1234567890,
+        userId: 1,
+        email: "nurse@gmail.com",
+      )),
       bookScheduleId: 12,
       bookSchedule: TodayNurseBookScheduleData(
           bookScheduleId: 1,
@@ -181,10 +180,7 @@ class _NurseTodayAudioAppointmentsScreenState
           patientFirstName: "Patient",
           patientLastName: "name",
           patientPincode: 123456,
-          specialization:TodayNurseSpecializationData(
+          specialization: TodayNurseSpecializationData(
             specializationName: "Specialization",
-          )
-      )
-  );
-
+          )));
 }

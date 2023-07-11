@@ -4,7 +4,9 @@ import '../../../../../Utils/colors/colors.dart';
 import 'history_nurse_consultation_item.dart';
 
 class HistoryNurseVideoConsultationScreen extends StatefulWidget {
-  const HistoryNurseVideoConsultationScreen({super.key});
+  const HistoryNurseVideoConsultationScreen({
+    super.key,
+  });
 
   @override
   State<HistoryNurseVideoConsultationScreen> createState() =>
