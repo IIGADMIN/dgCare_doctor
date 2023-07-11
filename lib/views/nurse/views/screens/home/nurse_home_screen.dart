@@ -90,28 +90,34 @@ class _NurseHomeScreenState extends State<NurseHomeScreen> {
             ],
           ),
           10.height,
-          view.headerConsultationView(title: "Upcoming Appointments"),
+
+          //situ
+          //view.headerConsultationView(title: "Upcoming Appointments"),
           5.height,
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              view.todayAppointmentCounterItemView(
-                  title: "Video Consultation",
-                  imagePath: videoImagePath,
-                  counter: "9",
-                  icon: Icons.video_call_outlined,
-                  bgColor: Colors.white,
-                  navigateTo: const NurseUpcomingVideoConsultationScreen()
-              ),
+
+              // situ
+              // view.todayAppointmentCounterItemView(
+              //     title: "Video Consultation",
+              //     imagePath: videoImagePath,
+              //     counter: "9",
+              //     icon: Icons.video_call_outlined,
+              //     bgColor: Colors.white,
+              //     navigateTo: const NurseUpcomingVideoConsultationScreen()
+              // ),
               10.width,
-              view.todayAppointmentCounterItemView(
-                  title: "Audio Consultation",
-                  imagePath: audioImagePath,
-                  counter: "90",
-                  icon: Icons.phone,
-                  bgColor: Colors.grey,
-                  navigateTo: const NurseUpcomingAudioConsultationScreen()
-              )
+
+            //  situ
+              // view.todayAppointmentCounterItemView(
+              //     title: "Audio Consultation",
+              //     imagePath: audioImagePath,
+              //     counter: "90",
+              //     icon: Icons.phone,
+              //     bgColor: Colors.grey,
+              //     navigateTo: const NurseUpcomingAudioConsultationScreen()
+              // )
             ],
           )
         ],
