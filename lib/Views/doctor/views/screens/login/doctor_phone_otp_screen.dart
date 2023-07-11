@@ -38,6 +38,7 @@ class _DoctorOtpScreenState extends State<DoctorOtpScreen> {
     var height = screenHeight(context);
     var width = screenWidth(context);
     return Scaffold(
+
       body: ListView(
         children: [
           SizedBox(
