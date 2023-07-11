@@ -1,8 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:healthcaredoctor2050/utils/colors/colors.dart';
+import 'package:healthcaredoctor2050/utils/constants/constant_data.dart';
 import 'package:healthcaredoctor2050/utils/sizes/app_sizes.dart';
 import 'package:healthcaredoctor2050/views/nurse/views/screens/home/nurse_home_screen.dart';
+import 'package:healthcaredoctor2050/views/pharmacist/views/screens/home/pharmacist_home_screen.dart';
 import 'package:healthcaredoctor2050/widgets/screens/splash/splash_widgets.dart';
 import '../../../helpers/internet_helper.dart';
 import '../../../helpers/notification_helper.dart';
@@ -58,11 +60,19 @@ class _SplashScreenState extends State<SplashScreen> {
 
 _checkUserLoginStatus() async {
   if (await getBoolFromLocal(loggedInKey) == true) {
+    var userType = await getStringFromLocal(userTypeKey);
     if(!mounted) return;
-    Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(builder: (context) => const NurseHomeScreen()),
-            (route) => false);
+    if(userType == nurseCode){
+      Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (context) => const NurseHomeScreen()),
+              (route) => false);
+    }else{
+      Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (context) => const PharmacistHomeScreen()),
+              (route) => false);
+    }
   } else {
     if(!mounted) return;
     Navigator.pushAndRemoveUntil(

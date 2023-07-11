@@ -25,43 +25,46 @@ class _NurseProfileScreenState extends State<NurseProfileScreen> {
         backgroundColor: appBarColor,
         title: const Text("Profile"),
       ),
-      body: Consumer<NurseDetailsProvider>(builder: (BuildContext context, data, Widget? child) {
-        return Container(
-          color: Colors.transparent,
-          height: height,
-          child: Stack(
-            children: [
-              Positioned(
-                bottom: 0,
-                left: 0,
-                right: 0,
-                child: Container(
-                  height: height / 1.35,
-                  width: width,
-                  decoration: BoxDecoration(
-                      color: secondaryBgColor,
-                      borderRadius: const BorderRadius.only(
-                          topRight: Radius.circular(20),
-                          topLeft: Radius.circular(20))),
-                  child: view.nurseDetailsView(),
+      body: Consumer<NurseDetailsProvider>(
+        builder: (BuildContext context, data, Widget? child) {
+          return Container(
+            color: Colors.transparent,
+            height: height,
+            child: Stack(
+              children: [
+                Positioned(
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+                  child: Container(
+                    height: height / 1.35,
+                    width: width,
+                    decoration: BoxDecoration(
+                        color: secondaryBgColor,
+                        borderRadius: const BorderRadius.only(
+                            topRight: Radius.circular(20),
+                            topLeft: Radius.circular(20))),
+                    child: view.nurseDetailsView(),
+                  ),
                 ),
-              ),
-              Positioned(
-                top: 40,
-                left: 0,
-                right: 0,
-                child: Consumer<NurseDetailsProvider>(
-                  builder: (BuildContext context, value, Widget? child) {
-                    return Center(
-                      child: view.profileImageView(nurseImageUrl + data.getUserProfilePic),
-                    );
-                  },
+                Positioned(
+                  top: 40,
+                  left: 0,
+                  right: 0,
+                  child: Consumer<NurseDetailsProvider>(
+                    builder: (BuildContext context, value, Widget? child) {
+                      return Center(
+                        child: view.profileImageView(
+                            nurseImageUrl + data.getUserProfilePic),
+                      );
+                    },
+                  ),
                 ),
-              ),
-            ],
-          ),
-        );
-      },),
+              ],
+            ),
+          );
+        },
+      ),
     );
   }
 }

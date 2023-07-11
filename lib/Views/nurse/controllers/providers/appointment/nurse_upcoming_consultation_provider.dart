@@ -18,7 +18,7 @@ class NurseUpcomingConsultationProvider extends ChangeNotifier {
 
   var httpHelper = HttpRequestHelper();
 
-  getServiceProviderNurseUpcomingConsultations(
+  getNurseUpcomingConsultations(
       String consultationTypeId) async {
     _upcomingServiceProviderNurseConsultationsList = [];
 

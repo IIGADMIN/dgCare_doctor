@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:healthcaredoctor2050/utils/constants/constant_data.dart';
 
 import '../../../../../../Utils/colors/colors.dart';
 import '../../../../../../widgets/loader_dialog_view.dart';
@@ -17,6 +18,18 @@ class NurseUpcomingAudioConsultationScreen extends StatefulWidget {
 
 class _NurseUpcomingAudioConsultationScreenState
     extends State<NurseUpcomingAudioConsultationScreen> {
+  @override
+  void initState() {
+    super.initState();
+    getUserType();
+  }
+
+  Future<void> getUserType() async {
+    var provider =
+        Provider.of<NurseUpcomingConsultationProvider>(context, listen: false);
+    provider.getNurseUpcomingConsultations(audioConsultationId);
+  }
+
   @override
   Widget build(BuildContext context) {
     var view = NurseUpcomingConsultationWidgets(context: context);
