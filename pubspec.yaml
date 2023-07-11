@@ -135,6 +135,7 @@ dev_dependencies:
   flutter_linkify:
   flutter_foreground_task: ^3.10.0
   image_gallery_saver:
+  bot_toast:
 
 
 # For information on the generic Dart part of this file, see the

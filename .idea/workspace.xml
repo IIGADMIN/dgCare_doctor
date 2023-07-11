@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5306b947-fab3-4cd6-9756-ab96f19ff962" name="Changes" comment="doctor phone">
-      <change beforePath="$PROJECT_DIR$/.idea/dgCare_doctor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dgCare_doctor.iml" afterDir="false" />
+    <list default="true" id="5306b947-fab3-4cd6-9756-ab96f19ff962" name="Changes" comment="other details">
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Views/doctor/controllers/providers/Login/doctor_phone_otp_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Views/doctor/controllers/providers/Login/doctor_phone_otp_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/nurse/views/screens/profile/nurse_profile_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/nurse/views/screens/profile/nurse_profile_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +133,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688994097716</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="other details">
+      <created>1689052042352</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1689052042352</updated>
+    </task>
+    <task id="LOCAL-00009" summary="other details">
+      <created>1689052051895</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1689052051895</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,7 +172,8 @@
     <MESSAGE value="nurse phone otp screen" />
     <MESSAGE value="nurse phone otp verify screen" />
     <MESSAGE value="doctor phone" />
-    <option name="LAST_COMMIT_MESSAGE" value="doctor phone" />
+    <MESSAGE value="other details" />
+    <option name="LAST_COMMIT_MESSAGE" value="other details" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -7,6 +7,7 @@ import '../../../helpers/internet_helper.dart';
 import '../../../helpers/notification_helper.dart';
 import '../../../utils/data/local_data_keys.dart';
 import '../../../utils/data/shared_preference.dart';
+import '../../../views/doctor/views/screens/home/doctor_home_screen.dart';
 import '../profile_selection/profile_selection_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -19,7 +20,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   void startTimer() {
     Timer(const Duration(seconds: 3), () {
-      _checkUserLoginStatus();
+      _checkUserLogingStatus();
     });
   }
 
@@ -55,19 +56,35 @@ class _SplashScreenState extends State<SplashScreen> {
         ));
   }
 
-_checkUserLoginStatus() async {
-  if (await getBoolFromLocal(loggedInKey) == true) {
-    if(!mounted) return;
-    Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(builder: (context) => const ProfileSelectionScreen()),
-            (route) => false);
-  } else {
-    if(!mounted) return;
-    Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(builder: (context) => const ProfileSelectionScreen()),
-            (route) => false);
+
+  _checkUserLogingStatus() async {
+    if (await getBoolFromLocal(loggedInKey) == true) {
+      Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (context) => DoctorHomeScreen()),
+              (route) => false);
+    } else {
+      Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (context) => ProfileSelectionScreen()),
+              (route) => false);
+    }
+
   }
-}
+
+  // _checkUserLoginStatus() async {
+  //   if (await getBoolFromLocal(loggedInKey) == true) {
+  //     if(!mounted) return;
+  //     Navigator.pushAndRemoveUntil(
+  //         context,
+  //         MaterialPageRoute(builder: (context) => const ProfileSelectionScreen()),
+  //             (route) => false);
+  //   } else {
+  //     if(!mounted) return;
+  //     Navigator.pushAndRemoveUntil(
+  //         context,
+  //         MaterialPageRoute(builder: (context) => const ProfileSelectionScreen()),
+  //             (route) => false);
+  //   }
+  // }
 }
