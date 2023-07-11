@@ -63,30 +63,36 @@ class _NurseHomeScreenState extends State<NurseHomeScreen> {
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 10),
         children: [
-          view.nurseDetailsHomeView(),
+          //situ
+        //  view.nurseDetailsHomeView(),
           10.height,
-          view.headerConsultationView(title: "Today's Appointments"),
+       //situ
+       //   view.headerConsultationView(title: "Today's Appointments"),
           5.height,
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              view.todayAppointmentCounterItemView(
-                  title: "Video Consultation",
-                  imagePath: videoImagePath,
-                  counter: "90",
-                  icon: Icons.video_call_outlined,
-                bgColor: Colors.white,
-                navigateTo: const NurseTodayVideoConsultationScreen()
-              ),
+
+              //situ
+              // view.todayAppointmentCounterItemView(
+              //     title: "Video Consultation",
+              //     imagePath: videoImagePath,
+              //     counter: "90",
+              //     icon: Icons.video_call_outlined,
+              //   bgColor: Colors.white,
+              //   navigateTo: const NurseTodayVideoConsultationScreen()
+              // ),
               10.width,
-              view.todayAppointmentCounterItemView(
-                  title: "Audio Consultation",
-                  imagePath: audioImagePath,
-                  counter: "90",
-                  icon: Icons.phone,
-                  bgColor: Colors.grey,
-                navigateTo: const NurseTodayAudioAppointmentsScreen()
-              )
+
+              //situ
+              // view.todayAppointmentCounterItemView(
+              //     title: "Audio Consultation",
+              //     imagePath: audioImagePath,
+              //     counter: "90",
+              //     icon: Icons.phone,
+              //     bgColor: Colors.grey,
+              //   navigateTo: const NurseTodayAudioAppointmentsScreen()
+              // )
             ],
           ),
           10.height,

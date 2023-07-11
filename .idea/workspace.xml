@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5306b947-fab3-4cd6-9756-ab96f19ff962" name="Changes" comment="doctor auth screen">
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/constants/constant_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/constants/constant_data.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/screens/splash/splash_screen.dart" afterDir="false" />
-    </list>
+    <list default="true" id="5306b947-fab3-4cd6-9756-ab96f19ff962" name="Changes" comment="nurse home updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688966131538</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="doctor updated">
+      <created>1689060311456</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689060311456</updated>
+    </task>
+    <task id="LOCAL-00007" summary="nurse home updated">
+      <created>1689060395042</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689060395042</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,7 +150,9 @@
     <MESSAGE value="remove 100ms" />
     <MESSAGE value="resolve 100ms issue" />
     <MESSAGE value="add upcoming and history" />
-    <option name="LAST_COMMIT_MESSAGE" value="add upcoming and history" />
+    <MESSAGE value="doctor updated" />
+    <MESSAGE value="nurse home updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="nurse home updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
