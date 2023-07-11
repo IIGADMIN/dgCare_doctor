@@ -81,7 +81,7 @@ class _ProfileSelectionScreenState extends State<ProfileSelectionScreen> {
                 height: height / 3,
                 width: width - width / 16, onTap: () {
               contactUsView.showContactAndLoginBottomSheet(context,
-                  title: "Doctor", loginFor: NursePhoneAuthScreen(profileType: doctorCode,
+                  title: "Doctor", loginFor: DoctorPhoneAuthScreen(profileType: doctorCode,
                       imagePath: doctorImage,
                       title: "Doctor"));
             }, imagePath: doctorImage)
