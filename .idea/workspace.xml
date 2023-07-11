@@ -4,30 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5306b947-fab3-4cd6-9756-ab96f19ff962" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/controllers/datas/nurse_api_urls.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/controllers/providers/login/nurse_auth_provider.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/controllers/providers/login/nurse_details_provider.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/models/nuser_details_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/views/screens/login/nurse_auth_widgets.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/views/screens/login/nurse_phone_auth_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Views/nurse/views/screens/login/nurse_phone_otp_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils/styles/image_style.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/app_widgets/app_button_view.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/app_widgets/no_internent_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/app_widgets/notification/app_notification_view.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/app_widgets/notification/notification_service.dart" afterDir="false" />
+    <list default="true" id="5306b947-fab3-4cd6-9756-ab96f19ff962" name="Changes" comment="doctor phone">
+      <change beforePath="$PROJECT_DIR$/.idea/dgCare_doctor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dgCare_doctor.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/nurse/views/screens/home/nurse_home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/nurse/views/screens/home/nurse_home_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/nurse/views/screens/home/nurse_home_widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/nurse/views/screens/home/nurse_home_widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/loader_dialog_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/loader_dialog_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/screens/profile_selection/profile_selection_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/screens/profile_selection/profile_selection_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/screens/request_registration/request_registration_widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/screens/request_registration/request_registration_widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Views/doctor/controllers/providers/Login/doctor_phone_otp_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Views/doctor/controllers/providers/Login/doctor_phone_otp_screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="aa/set_up_project" />
+        <entry key="$PROJECT_DIR$" value="sc/splash_screen" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,18 +42,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "D:/ansar/iig projects/2050Healthcare/dgCare_doctor/lib/utils/styles",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;flutter.performance.tool.window.visible&quot;: &quot;true&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ansar/iig projects/2050Healthcare/dgCare_doctor/lib/utils/styles&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ansar\iig projects\2050Healthcare\dgCare_doctor\lib\utils\styles" />
@@ -100,6 +83,56 @@
       <option name="presentableId" value="Default" />
       <updated>1688467767974</updated>
     </task>
+    <task id="LOCAL-00001" summary="doctor auth">
+      <created>1688981202095</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688981202095</updated>
+    </task>
+    <task id="LOCAL-00002" summary="doctor deteails">
+      <created>1688981437619</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688981437619</updated>
+    </task>
+    <task id="LOCAL-00003" summary="doctor auth complete">
+      <created>1688981666647</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688981666647</updated>
+    </task>
+    <task id="LOCAL-00004" summary="doctor auth login point">
+      <created>1688991193426</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688991193426</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ambulance">
+      <created>1688991257353</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688991257353</updated>
+    </task>
+    <task id="LOCAL-00006" summary="nurse phone otp screen">
+      <created>1688991383415</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688991383415</updated>
+    </task>
+    <task id="LOCAL-00007" summary="nurse phone otp verify screen">
+      <created>1688994097714</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1688994097716</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,45 +146,24 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="doctor deteails" />
+    <MESSAGE value="doctor auth complete" />
+    <MESSAGE value="doctor auth" />
+    <MESSAGE value="doctor auth login point" />
+    <MESSAGE value="ambulance" />
+    <MESSAGE value="doctor phone otp" />
+    <MESSAGE value="doctor phone otp screen" />
+    <MESSAGE value="nurse phone otp screen" />
+    <MESSAGE value="nurse phone otp verify screen" />
+    <MESSAGE value="doctor phone" />
+    <option name="LAST_COMMIT_MESSAGE" value="doctor phone" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/views/nurse/controllers/providers/login/nurse_auth_provider.dart</url>
-          <line>35</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/views/nurse/controllers/providers/login/nurse_auth_provider.dart</url>
-          <line>34</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/views/nurse/views/screens/login/nurse_phone_auth_screen.dart</url>
-          <line>138</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/helpers/api_helper.dart</url>
-          <line>58</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/helpers/api_helper.dart</url>
-          <line>62</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/helpers/api_helper.dart</url>
-          <line>60</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/helpers/api_helper.dart</url>
-          <line>59</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="dart-exception" />
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>
