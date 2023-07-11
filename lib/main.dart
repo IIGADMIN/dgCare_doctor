@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:healthcaredoctor2050/utils/firebase/firebase_options.dart';
+import 'package:healthcaredoctor2050/views/doctor/controllers/providers/Login/doctor_auth_provider.dart';
+import 'package:healthcaredoctor2050/views/doctor/views/screens/home/doctor_home_screen.dart';
 import 'package:healthcaredoctor2050/views/nurse/controllers/providers/appointment/nurse_history_consultation_provider.dart';
 import 'package:healthcaredoctor2050/views/nurse/controllers/providers/appointment/nurse_today_appointment_provider.dart';
 import 'package:healthcaredoctor2050/views/nurse/controllers/providers/appointment/nurse_upcoming_consultation_provider.dart';
@@ -31,6 +33,11 @@ Future<void> main() async{
   runApp(
     MultiProvider(
       providers: [
+
+        /// doctor's provider
+        ChangeNotifierProvider<DoctorAuthProvider>.value(
+            value: DoctorAuthProvider()),
+
         /// nurse's provider
         ChangeNotifierProvider<NurseDetailsProvider>.value(
             value: NurseDetailsProvider()),

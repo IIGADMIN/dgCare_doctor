@@ -6,11 +6,8 @@ import 'package:healthcaredoctor2050/views/nurse/views/screens/home/nurse_home_s
 import 'package:healthcaredoctor2050/widgets/screens/splash/splash_widgets.dart';
 import '../../../helpers/internet_helper.dart';
 import '../../../helpers/notification_helper.dart';
-import '../../../utils/constants/constant_data.dart';
 import '../../../utils/data/local_data_keys.dart';
 import '../../../utils/data/shared_preference.dart';
-import '../../../views/doctor/views/screens/home/doctor_home_screen.dart';
-import '../../../views/pharmacist/views/screens/home/pharmacist_home_screen.dart';
 import '../profile_selection/profile_selection_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -59,58 +56,13 @@ class _SplashScreenState extends State<SplashScreen> {
         ));
   }
 
-
-  // _checkUserLogingStatus() async {
-  //   if (await getBoolFromLocal(loggedInKey) == true) {
-  //     Navigator.pushAndRemoveUntil(
-  //         context,
-  //         MaterialPageRoute(builder: (context) => DoctorHomeScreen()),
-  //             (route) => false);
-  //   } else {
-  //     Navigator.pushAndRemoveUntil(
-  //         context,
-  //         MaterialPageRoute(builder: (context) => ProfileSelectionScreen()),
-  //             (route) => false);
-  //   }
-  //
-  // }
-
-  // _checkUserLoginStatus() async {
-  //   if (await getBoolFromLocal(loggedInKey) == true) {
-  //     if(!mounted) return;
-  //     Navigator.pushAndRemoveUntil(
-  //         context,
-  //         MaterialPageRoute(builder: (context) => const ProfileSelectionScreen()),
-  //             (route) => false);
-  //   } else {
-  //     if(!mounted) return;
-  //     Navigator.pushAndRemoveUntil(
-  //         context,
-  //         MaterialPageRoute(builder: (context) => const ProfileSelectionScreen()),
-  //             (route) => false);
-  //   }
-  // }
 _checkUserLoginStatus() async {
   if (await getBoolFromLocal(loggedInKey) == true) {
-    var userType = await getStringFromLocal(userTypeKey);
     if(!mounted) return;
-    if(userType == nurseCode){
-      Navigator.pushAndRemoveUntil(
-          context,
-          MaterialPageRoute(builder: (context) => const NurseHomeScreen()),
-              (route) => false);
-    }else if(userType == pharmacyCode){
-      Navigator.pushAndRemoveUntil(
-          context,
-          MaterialPageRoute(builder: (context) => const PharmacistHomeScreen()),
-              (route) => false);
-    }
-    else{
-      Navigator.pushAndRemoveUntil(
-          context,
-          MaterialPageRoute(builder: (context) => const DoctorHomeScreen()),
-              (route) => false);
-    }
+    Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (context) => const NurseHomeScreen()),
+            (route) => false);
   } else {
     if(!mounted) return;
     Navigator.pushAndRemoveUntil(
