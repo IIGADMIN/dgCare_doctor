@@ -7,25 +7,24 @@ import 'package:timer_count_down/timer_controller.dart';
 import 'package:timer_count_down/timer_count_down.dart';
 import '../../../../../utils/colors/colors.dart';
 import '../../../../../widgets/loader_dialog_view.dart';
-import '../../../../nurse/controllers/providers/login/nurse_auth_provider.dart';
 import '../../../controllers/providers/login/doctor_auth_provider.dart';
 import '../../../views/screens/home/doctor_home_screen.dart';
 
-class DoctorOTPVerificationScreen extends StatefulWidget {
+class DoctorOtpScreen extends StatefulWidget {
   final String phoneNumber;
   final String userTYpe;
 
-  const DoctorOTPVerificationScreen({
+  const DoctorOtpScreen({
     Key? key,
     required this.phoneNumber,
     required this.userTYpe,
   }) : super(key: key);
 
   @override
-  State<DoctorOTPVerificationScreen> createState() => _DoctorOTPVerificationScreenState();
+  State<DoctorOtpScreen> createState() => _DoctorOtpScreenState();
 }
 
-class _DoctorOTPVerificationScreenState extends State<DoctorOTPVerificationScreen> {
+class _DoctorOtpScreenState extends State<DoctorOtpScreen> {
   bool connected = false;
 
   String currentOTP = '';
