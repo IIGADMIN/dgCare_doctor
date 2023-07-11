@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:healthcaredoctor2050/utils/sizes/app_sizes.dart';
+import 'package:healthcaredoctor2050/views/doctor/controllers/providers/Login/doctor_auth_provider.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:provider/provider.dart';
 import 'package:pinput/pinput.dart';
@@ -7,7 +8,6 @@ import 'package:timer_count_down/timer_controller.dart';
 import 'package:timer_count_down/timer_count_down.dart';
 import '../../../../../utils/colors/colors.dart';
 import '../../../../../widgets/loader_dialog_view.dart';
-import '../../../controllers/providers/login/doctor_auth_provider.dart';
 import '../../../views/screens/home/doctor_home_screen.dart';
 
 class DoctorOtpScreen extends StatefulWidget {
