@@ -3,6 +3,7 @@ import 'package:healthcaredoctor2050/utils/firebase/firebase_options.dart';
 import 'package:healthcaredoctor2050/views/nurse/controllers/providers/appointment/nurse_history_consultation_provider.dart';
 import 'package:healthcaredoctor2050/views/nurse/controllers/providers/appointment/nurse_today_appointment_provider.dart';
 import 'package:healthcaredoctor2050/views/nurse/controllers/providers/appointment/nurse_upcoming_consultation_provider.dart';
+import 'package:healthcaredoctor2050/views/nurse/controllers/providers/counter/nurse_consultation_counter_provider.dart';
 import 'package:healthcaredoctor2050/views/nurse/controllers/providers/login/nurse_auth_provider.dart';
 import 'package:healthcaredoctor2050/views/nurse/controllers/providers/login/nurse_details_provider.dart';
 import 'package:healthcaredoctor2050/views/pharmacist/controllers/providers/pharmacist_auth_provider.dart';
@@ -38,6 +39,8 @@ Future<void> main() async {
             value: NurseAuthProvider()),
         ChangeNotifierProvider<NurseTodayAppointmentProvider>.value(
             value: NurseTodayAppointmentProvider()),
+        ChangeNotifierProvider<NurseConsultationCountProvider>.value(
+            value: NurseConsultationCountProvider()),
         ChangeNotifierProvider<MeetingModeProvider>.value(
             value: MeetingModeProvider()),
         ChangeNotifierProvider<NurseUpcomingConsultationProvider>.value(

@@ -89,6 +89,8 @@ class _NursePhoneAuthScreenState extends State<NursePhoneAuthScreen> {
               child: Padding(
                 padding: const EdgeInsets.only(left: 0, right: 0),
                 child: IntlPhoneField(
+                  dropdownIcon: Icon(Icons.arrow_drop_down,color: mainColor,),
+                  cursorColor: mainColor,
                   controller: _phoneController,
                   decoration: InputDecoration(
                     hintText: "Mobile No.",

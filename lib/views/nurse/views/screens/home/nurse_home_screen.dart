@@ -32,9 +32,9 @@ class _NurseHomeScreenState extends State<NurseHomeScreen> {
   void initState() {
     super.initState();
     Provider.of<NurseDetailsProvider>(context, listen: false).getUserDetails();
-    getUserType();
-    _timer = Timer.periodic(const Duration(seconds: 2000), (timer) {
-      getUserType();
+    getNurseAppointmentCounter();
+    _timer = Timer.periodic(const Duration(seconds: 5), (timer) {
+      getNurseAppointmentCounter();
     });
   }
 
@@ -44,7 +44,7 @@ class _NurseHomeScreenState extends State<NurseHomeScreen> {
     super.dispose();
   }
 
-  Future<void> getUserType() async {
+  Future<void> getNurseAppointmentCounter() async {
     var provider =
         Provider.of<NurseConsultationCountProvider>(context, listen: false);
     provider.getAppointmentCounter();
@@ -58,64 +58,66 @@ class _NurseHomeScreenState extends State<NurseHomeScreen> {
       appBar: PreferredSize(
           preferredSize: Size(screenWidth(context), 55),
           child: view.nurseHomeAppBarView(onRefresh: () {
-            getUserType();
+            getNurseAppointmentCounter();
           })),
-      body: ListView(
-        padding: const EdgeInsets.symmetric(horizontal: 10),
-        children: [
-          view.nurseDetailsHomeView(),
-          10.height,
-          view.headerConsultationView(title: "Today's Appointments"),
-          5.height,
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              view.todayAppointmentCounterItemView(
-                  title: "Video Consultation",
-                  imagePath: videoImagePath,
-                  counter: "90",
-                  icon: Icons.video_call_outlined,
-                bgColor: Colors.white,
-                navigateTo: const NurseTodayVideoConsultationScreen()
-              ),
-              10.width,
-              view.todayAppointmentCounterItemView(
-                  title: "Audio Consultation",
-                  imagePath: audioImagePath,
-                  counter: "90",
-                  icon: Icons.phone,
-                  bgColor: Colors.grey,
-                navigateTo: const NurseTodayAudioAppointmentsScreen()
-              )
-            ],
-          ),
-          10.height,
-          view.headerConsultationView(title: "Upcoming Appointments"),
-          5.height,
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              view.todayAppointmentCounterItemView(
-                  title: "Video Consultation",
-                  imagePath: videoImagePath,
-                  counter: "9",
-                  icon: Icons.video_call_outlined,
-                  bgColor: Colors.white,
-                  navigateTo: const NurseUpcomingVideoConsultationScreen()
-              ),
-              10.width,
-              view.todayAppointmentCounterItemView(
-                  title: "Audio Consultation",
-                  imagePath: audioImagePath,
-                  counter: "90",
-                  icon: Icons.phone,
-                  bgColor: Colors.grey,
-                  navigateTo: const NurseUpcomingAudioConsultationScreen()
-              )
-            ],
-          )
-        ],
-      ),
+      body: Consumer<NurseConsultationCountProvider>(builder: (c,data,child){
+        return ListView(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          children: [
+            view.nurseDetailsHomeView(),
+            10.height,
+            view.headerConsultationView(title: "Today's Appointments"),
+            5.height,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                view.todayAppointmentCounterItemView(
+                    title: "Video Consultation",
+                    imagePath: videoImagePath,
+                    counter: data.getCounterData.todayVideoConsultCount.toString(),
+                    icon: Icons.video_call_outlined,
+                    bgColor: data.getCounterData.todayVideoConsultCount !=0?Colors.white:Colors.grey,
+                    navigateTo: const NurseTodayVideoConsultationScreen()
+                ),
+                10.width,
+                view.todayAppointmentCounterItemView(
+                    title: "Audio Consultation",
+                    imagePath: audioImagePath,
+                    counter: data.getCounterData.todayTeleConsultCount.toString(),
+                    icon: Icons.phone,
+                    bgColor: data.getCounterData.todayTeleConsultCount !=0?Colors.white:Colors.grey,
+                    navigateTo: const NurseTodayAudioAppointmentsScreen()
+                )
+              ],
+            ),
+            10.height,
+            view.headerConsultationView(title: "Upcoming Appointments"),
+            5.height,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                view.todayAppointmentCounterItemView(
+                    title: "Video Consultation",
+                    imagePath: videoImagePath,
+                    counter: data.getCounterData.upcomingVideoConsultCount.toString(),
+                    icon: Icons.video_call_outlined,
+                    bgColor: data.getCounterData.upcomingVideoConsultCount !=0?Colors.white:Colors.grey,
+                    navigateTo: const NurseUpcomingVideoConsultationScreen()
+                ),
+                10.width,
+                view.todayAppointmentCounterItemView(
+                    title: "Audio Consultation",
+                    imagePath: audioImagePath,
+                    counter: data.getCounterData.upcomingTeleConsultCount.toString(),
+                    icon: Icons.phone,
+                    bgColor: data.getCounterData.upcomingTeleConsultCount !=0?Colors.white:Colors.grey,
+                    navigateTo: const NurseUpcomingAudioConsultationScreen()
+                )
+              ],
+            )
+          ],
+        );
+      }),
     );
   }
 }

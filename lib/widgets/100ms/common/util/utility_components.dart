@@ -5,6 +5,8 @@ import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:healthcaredoctor2050/views/nurse/views/screens/home/nurse_home_screen.dart';
+import 'package:healthcaredoctor2050/views/pharmacist/views/screens/home/pharmacist_home_screen.dart';
 import 'package:healthcaredoctor2050/widgets/100ms/common/app_dialogs/role_change_request_dialog.dart';
 import 'package:healthcaredoctor2050/widgets/100ms/common/app_dialogs/track_change_request_dialog.dart';
 import 'package:healthcaredoctor2050/widgets/100ms/services/constant.dart';
@@ -17,6 +19,7 @@ import 'package:healthcaredoctor2050/Utils/data/local_data_keys.dart';
 import 'package:healthcaredoctor2050/Utils/data/shared_preference.dart';
 import 'package:provider/provider.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+
 //Project imports
 import 'package:hmssdk_flutter/hmssdk_flutter.dart';
 import 'package:healthcaredoctor2050/widgets/100ms/meeting/meeting_store.dart';
@@ -24,7 +27,6 @@ import 'package:collection/collection.dart';
 
 import '../../../../utils/constants/constant_data.dart';
 import '../../providers/meeting_mode_provider.dart';
-
 
 class UtilityComponents {
   static Future<dynamic> onBackPressed(BuildContext context) {
@@ -120,26 +122,45 @@ class UtilityComponents {
                         Provider.of<MeetingModeProvider>(context,
                             listen: false);
                     var userType = await getStringFromLocal(userTypeKey);
-                    if (userType == doctorCode) {
-                      meetingModeProvider.roomEndService().then((value) {
-                       
-
-                        if (value == true) {
-
-                          _meetingStore.leave();
-                          Navigator.pop(context);
-                          Navigator.popUntil(context, (route) => route.isFirst);
-                        } else {
-                          Navigator.pop(context);
-                          Fluttertoast.showToast(
-                              msg: "Can't leave Current Call, Try again");
-                        }
-                      });
+                    if (userType == nurseCode) {
+                      _meetingStore.leave();
+                      Navigator.pop(context);
+                      Navigator.pushAndRemoveUntil(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const NurseHomeScreen()),
+                          (route) => false);
                     } else {
                       _meetingStore.leave();
                       Navigator.pop(context);
-                      Navigator.popUntil(context, (route) => route.isFirst);
+                      Navigator.pushAndRemoveUntil(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const PharmacistHomeScreen()),
+                          (route) => false);
                     }
+
+                    ///
+                    // if (userType == doctorCode) {
+                    //   meetingModeProvider.roomEndService().then((value) {
+                    //     if (value == true) {
+                    //       _meetingStore.leave();
+                    //       Navigator.pop(context);
+                    //       Navigator.popUntil(context, (route) => route.isFirst);
+                    //     } else {
+                    //       Navigator.pop(context);
+                    //       Fluttertoast.showToast(
+                    //           msg: "Can't leave Current Call, Try again");
+                    //     }
+                    //   });
+                    // } else {
+                    //   _meetingStore.leave();
+                    //   Navigator.pop(context);
+                    //   Navigator.popUntil(context, (route) => route.isFirst);
+                    // }
+
+                    ///
                   },
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
@@ -985,7 +1006,6 @@ class UtilityComponents {
                               letterSpacing: 0.50)),
                     )),
               ),
-
               const SizedBox(
                 width: 5,
               ),
@@ -999,30 +1019,29 @@ class UtilityComponents {
                         side: BorderSide(width: 1, color: errorColor),
                         borderRadius: BorderRadius.circular(8.0),
                       ))),
-                  onPressed: () async{
+                  onPressed: () async {
                     MeetingModeProvider meetingModeProvider =
                         Provider.of<MeetingModeProvider>(context,
                             listen: false);
 
-                        var userType = await getStringFromLocal(userTypeKey);
+                    var userType = await getStringFromLocal(userTypeKey);
                     if (userType == doctorCode) {
                       meetingModeProvider.roomEndService().then((value) {
                         if (value == true) {
                           _meetingStore.endRoom(false, "Room end from doctor");
-                          if(_meetingStore.isRoomEnded){
+                          if (_meetingStore.isRoomEnded) {
                             _meetingStore.leave();
                             Navigator.pop(context);
-                            Navigator.popUntil(context, (route) => route.isFirst);
+                            Navigator.popUntil(
+                                context, (route) => route.isFirst);
                           } else {
                             Navigator.pop(context);
                             Fluttertoast.showToast(
                                 msg: "leave room, Try again");
                           }
-
                         } else {
                           Navigator.pop(context);
-                          Fluttertoast.showToast(
-                              msg: "leave room, Try again");
+                          Fluttertoast.showToast(msg: "leave room, Try again");
                         }
                       });
                     } else {
