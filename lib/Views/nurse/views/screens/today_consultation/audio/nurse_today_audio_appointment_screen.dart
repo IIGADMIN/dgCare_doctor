@@ -11,6 +11,7 @@ import '../../../../../../utils/constants/constant_data.dart';
 import '../../../../../../widgets/100ms/enum/meeting_mode.dart';
 import '../../../../../../widgets/100ms/providers/meeting_mode_provider.dart';
 import '../../../../../../widgets/100ms/start_video_service.dart';
+import '../../../../../../widgets/loader_dialog_view.dart';
 import '../../../../controllers/providers/appointment/nurse_today_appointment_provider.dart';
 import '../../../../models/today_nurse_appointment_model.dart';
 import '../video/nurse_today_consultation_widgets.dart';
@@ -49,37 +50,29 @@ class _NurseTodayAudioAppointmentsScreenState
 
   @override
   Widget build(BuildContext context) {
-    var nurseData = [myData, myData, myData];
 
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("Audio Appointments"),
-          backgroundColor: mainColor,
-        ),
-        body: ListView.builder(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-            itemCount: nurseData.length,
-            itemBuilder: (context, index) {
-              return _cardItem(nurseData[index]);
-            })
-        // body: Consumer<NurseTodayAppointmentProvider>(
-        //   builder: (BuildContext context, value, Widget? child) {
-        //     List<TodayNurseConsultationData> data =
-        //         value.getTodayNurseAppointmentsData;
-        //     return value.loaderStatus == false
-        //         ? data.isNotEmpty
-        //             ? ListView.builder(
-        //                 padding: const EdgeInsets.symmetric(
-        //                     horizontal: 10, vertical: 10),
-        //                 itemCount: data.length,
-        //                 itemBuilder: (context, index) {
-        //                   return _cardItem(data[index]);
-        //                 })
-        //         : const ScreenLoadingView()
-        //         : noAppointmentView();
-        //   },
-        // ),
-        );
+      appBar: AppBar(
+        title: const Text("Audio Appointments"),
+        backgroundColor: mainColor,
+      ),
+      body: Consumer<NurseTodayAppointmentProvider>(
+        builder: (BuildContext context, value, Widget? child) {
+          List<TodayNurseConsultationData> data =
+              value.getTodayNurseAppointmentsData;
+          return value.loaderStatus == false
+              ? noAppointmentView():data.isNotEmpty
+                  ? ListView.builder(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 10, vertical: 10),
+                      itemCount: data.length,
+                      itemBuilder: (context, index) {
+                        return _cardItem(data[index]);
+                      })
+                  : const ScreenLoadingView();
+        },
+      ),
+    );
   }
 
   _cardItem(TodayNurseConsultationData data) {
